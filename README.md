@@ -1,6 +1,6 @@
 <!-- Profile Header with Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=ff69b4&height=200&section=header&text=Rosalina%20Torres&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Data%20Analytics%20Engineer%20|%20MS%20Candidate&descAlignY=55&descAlign=62" width="100%" alt="Profile Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FADADD&height=200&section=header&text=Rosalina%20Torres&fontSize=40&fontColor=333333&animation=fadeIn&fontAlignY=38&desc=Data%20Analytics%20Engineer%20|%20MS%20Candidate&descAlignY=55&descAlign=62" width="100%" alt="Profile Banner"/>
 </div>
 
 <p align="center">
@@ -123,7 +123,7 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
   <a href="https://www.linkedin.com/in/rosalina2">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=FFD6E9" alt="LinkedIn"/>
   </a>
-  <a href="mailto:rosalina7torres@gmail.com">
+  <a href="mailto:torres.ros@northeastern.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=FFBCDA" alt="Email"/>
   </a>
   <a href="https://github.com/rosalinatorres888">
@@ -132,10 +132,11 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 </p>
 
 <!-- Rose-themed Footer -->
+<!-- Pale Pink Wave Footer -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=ff69b4&height=120&section=footer" width="100%" alt="Footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FADADD&section=footer&height=120" width="100%" alt="Footer"/>
 </div>
 
-<div align="center" style="color:#E79898">
+<div align="center" style="color:#333333">
   <i>"Transforming data into stories, and stories into actionable strategies."</i>
 </div>
