@@ -95,17 +95,17 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 <!-- Featured Projects with Cards -->
 ## ✨ Featured Projects
 <div align="center">
-  <a href="https://github.com/rosalinatorres888/Network-Word-Frequency-Analysis-for-Data-Mining">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rosalinatorres888&repo=Network-Word-Frequency-Analysis-for-Data-Mining&theme=graywhite" />
-  </a>
+ <a href="https://github.com/rosalinatorres888/Network-Word-Frequency-Analysis-for-Data-Mining">
+  <img src="https://img.shields.io/badge/Project-Network_Word_Frequency_Analysis-blue?style=for-the-badge&logo=github" />
+</a>
   
-  <a href="https://github.com/rosalinatorres888/Human_Activity_Monitoring">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rosalinatorres888&repo=Human_Activity_Monitoring&theme=graywhite" />
-  </a>
+  <a href="https://github.com/rosalinatorres888/human-activity-entropy">
+  <img src="https://img.shields.io/badge/Project-Human_Activity_Entropy-orange?style=for-the-badge&logo=github" />
+</a>
   
   <a href="https://github.com/rosalinatorres888/democracy-clustering-analysis">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rosalinatorres888&repo=democracy-clustering-analysis&theme=graywhite" />
-  </a>
+  <img src="https://img.shields.io/badge/Project-Democracy_Clustering_Analysis-green?style=for-the-badge&logo=github" />
+</a>
 </div>
 
 <!-- Project Descriptions -->
