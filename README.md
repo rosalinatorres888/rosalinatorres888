@@ -171,6 +171,8 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
   
 - **Democracy Clustering Analysis**: Applied unsupervised learning on 195 countries' data, discovering 7 distinct regime clusters with 0.89 silhouette score
 
+- **Crypto ML Pipeline**: Built end-to-end pipeline processing real-time crypto data with 85% prediction accuracy using TensorFlow and Apache Airflow
+
 ## 📈 GitHub Analytics
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=rosalinatorres888&show_icons=true&theme=radical&bg_color=FADADD&title_color=333333&text_color=333333" alt="GitHub Stats"/>
