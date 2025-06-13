@@ -116,9 +116,14 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 
 <!-- Featured Projects with Cards -->
 ## ✨ Featured Projects
+
 <div align="center">
  <a href="https://github.com/rosalinatorres888/Network-Word-Frequency-Analysis-for-Data-Mining">
   <img src="https://img.shields.io/badge/Project-Network_Word_Frequency_Analysis-blue?style=for-the-badge&logo=github" />
+</a>
+
+<a href="https://github.com/rosalinatorres888/crypto-ml-pipeline">
+  <img src="https://img.shields.io/badge/Project-Crypto_ML_Pipeline-red?style=for-the-badge&logo=github" />
 </a>
   
   <a href="https://github.com/rosalinatorres888/human-activity-entropy">
@@ -149,6 +154,13 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 - **Dataset**: 195 countries, multiple democracy indicators
 - **Achievements**: Identified 7 distinct regime clusters
 - [📂 View Code](https://github.com/rosalinatorres888/democracy-clustering-analysis)
+
+### 4. Crypto ML Pipeline 🔥 NEW
+- **Tech Stack**: Python, TensorFlow, Apache Airflow, PostgreSQL
+- **Dataset**: Real-time cryptocurrency market data
+- **Achievements**: End-to-end ML pipeline with 85% prediction accuracy
+- [📂 View Code](https://rosalinatorres888.github.io/crypto-ml-pipeline/)
+
 
 
 <!-- Project Descriptions -->
