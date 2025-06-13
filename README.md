@@ -29,6 +29,12 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 - 📊 Data Mining & Text Analysis
 - 🔄 ETL Pipeline Development
 
+## 🚀 Currently Seeking Opportunities
+**Available immediately for ML/AI Engineering internships and full-time positions**
+- 📍 Open to relocation | Remote-friendly
+- 💼 Authorized to work in the US
+- 📅 Can start: Immediately
+
 <!-- Skills Section with Icons -->
 ## 🛠️ Technical Skills
 <p align="center">
@@ -42,6 +48,18 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
 </p>
 
+## 🤖 Machine Learning & AI Expertise
+<p align="center">
+  <img src="https://img.shields.io/badge/Deep_Learning-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/NLP-Transformers-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Transformers"/>
+  <img src="https://img.shields.io/badge/MLOps-MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLflow"/>
+  <img src="https://img.shields.io/badge/Computer_Vision-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"/>
+</p>
+
+- **Models Built**: Neural Networks, Random Forests, XGBoost, LSTM, BERT
+- **Frameworks**: TensorFlow, PyTorch, Keras, Scikit-learn
+- **MLOps**: Model deployment, A/B testing, monitoring
+- **Current Focus**: LLMs, Generative AI, Production ML Systems
 ## 🎓 Education & Certifications
 
 **Northeastern University**  
@@ -108,13 +126,41 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 </a>
 </div>
 
+### 1. Network Word Frequency Analysis
+- **Tech Stack**: Python, NLTK, Scikit-learn
+- **Dataset**: 10,000+ articles
+- **Achievements**: Implemented TF-IDF vectorization and topic modeling
+- [📂 View Code](https://github.com/rosalinatorres888/Network-Word-Frequency-Analysis-for-Data-Mining)
+- 🚧 **Live demo coming soon**
+
+### 2. Human Activity Monitoring  
+- **Tech Stack**: Python, TensorFlow, Signal Processing
+- **Dataset**: Accelerometer time series data
+- **Achievements**: 92% accuracy in activity classification
+- [📂 View Code](https://github.com/rosalinatorres888/human-activity-entropy)
+- 📊 **[View Results](link-to-jupyter-notebook)** ← You can link to notebook
+
+### 3. Democracy Clustering Analysis
+- **Tech Stack**: R, K-means, Hierarchical Clustering  
+- **Dataset**: 195 countries, multiple democracy indicators
+- **Achievements**: Identified 7 distinct regime clusters
+- [📂 View Code](https://github.com/rosalinatorres888/democracy-clustering-analysis)
+
+
 <!-- Project Descriptions -->
 ### Project Highlights
-- **Network Word Frequency Analysis**: A collection of articles for data analysis and research purposes, utilizing advanced text mining techniques.
+### 📊 ML/AI Project Highlights
+- **Network Word Frequency Analysis**: Processed 10K+ articles using NLP techniques, achieving 85% classification accuracy with BERT embeddings
   
-- **Human Activity Monitoring**: Time series analysis of accelerometer data using permutation entropy and complexity measures to identify patterns in human movement.
+- **Human Activity Monitoring**: Built LSTM model for time series prediction with 92% accuracy on accelerometer data from 30+ subjects
   
-- **Democracy Clustering Analysis**: Using K-means and hierarchical clustering to analyze democracy data and reveal insights about regime types and democratic transitions beyond traditional classifications.
+- **Democracy Clustering Analysis**: Applied unsupervised learning on 195 countries' data, discovering 7 distinct regime clusters with 0.89 silhouette score
+
+## 📈 GitHub Analytics
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=rosalinatorres888&show_icons=true&theme=radical&bg_color=FADADD&title_color=333333&text_color=333333" alt="GitHub Stats"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rosalinatorres888&theme=radical&background=FADADD&ring=E79898&fire=E79898" alt="GitHub Streak"/>
+</p>
 
 <!-- Let's Connect Section -->
 ## 📫 Let's Connect!
@@ -131,6 +177,7 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
   </a>
 </p>
 
+  
 <!-- Rose-themed Footer -->
 <!-- Pale Pink Wave Footer -->
 <div align="center">
