@@ -137,8 +137,8 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 - **Tech Stack**: Python, TensorFlow, Signal Processing
 - **Dataset**: Accelerometer time series data
 - **Achievements**: 92% accuracy in activity classification
-- [📂 View Code](https://github.com/rosalinatorres888/human-activity-entropy)
-- 📊 **[View Results](link-to-jupyter-notebook)** ← You can link to notebook
+- [📂 View Code](https://github.com/rosalinatorres888/human-activity-entropy/blob/main/torres_rosalina_human_activity_analysis.ipynb)
+
 
 ### 3. Democracy Clustering Analysis
 - **Tech Stack**: R, K-means, Hierarchical Clustering  
@@ -148,7 +148,6 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 
 
 <!-- Project Descriptions -->
-### Project Highlights
 ### 📊 ML/AI Project Highlights
 - **Network Word Frequency Analysis**: Processed 10K+ articles using NLP techniques, achieving 85% classification accuracy with BERT embeddings
   
@@ -162,6 +161,13 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=rosalinatorres888&theme=radical&background=FADADD&ring=E79898&fire=E79898" alt="GitHub Streak"/>
 </p>
 
+## 📚 Currently Learning
+- 🧠 Advanced NLP with Transformers
+- 🚀 MLOps and Model Deployment
+- 📊 Large Language Models (LLMs)
+- 🔧 Kubernetes for ML
+
+  
 <!-- Let's Connect Section -->
 ## 📫 Let's Connect!
 
@@ -177,6 +183,16 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
   </a>
 </p>
 
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Machine_Learning_Engineer-FFD6E9?style=flat" />
+  <img src="https://img.shields.io/badge/Data_Scientist-FFBCDA?style=flat" />
+  <img src="https://img.shields.io/badge/AI_Engineer-E79898?style=flat" />
+  <img src="https://img.shields.io/badge/Available_Immediately-946656?style=flat" />
+  <img src="https://img.shields.io/badge/US_Work_Authorization-FFD6E9?style=flat" />
+</div>
+
+<!-- Pale Pink Wave Footer -->
   
 <!-- Rose-themed Footer -->
 <!-- Pale Pink Wave Footer -->
