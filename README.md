@@ -35,6 +35,7 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 - 💼 Authorized to work in the US
 - 📅 Can start: Immediately
 
+
 <!-- Skills Section with Icons -->
 ## 🛠️ Technical Skills
 <p align="center">
@@ -48,6 +49,7 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
 </p>
 
+
 ## 🤖 Machine Learning & AI Expertise
 <p align="center">
   <img src="https://img.shields.io/badge/Deep_Learning-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
@@ -56,11 +58,13 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
   <img src="https://img.shields.io/badge/Computer_Vision-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"/>
 </p>
 
+
 - **Models Built**: Neural Networks, Random Forests, XGBoost, LSTM, BERT
 - **Frameworks**: TensorFlow, PyTorch, Keras, Scikit-learn
 - **MLOps**: Model deployment, A/B testing, monitoring
 - **Current Focus**: LLMs, Generative AI, Production ML Systems
 ## 🎓 Education & Certifications
+
 
 **Northeastern University**  
 *M.S. Data Analytics Engineering | Boston, MA | Expected 2026*  
@@ -184,6 +188,7 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 </p>
 
 
+## 🔍 Keywords for Recruiters
 <div align="center">
   <img src="https://img.shields.io/badge/Machine_Learning_Engineer-FFD6E9?style=flat" />
   <img src="https://img.shields.io/badge/Data_Scientist-FFBCDA?style=flat" />
