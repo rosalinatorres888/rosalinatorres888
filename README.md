@@ -139,7 +139,7 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 - **Tech Stack**: Python, NLTK, Scikit-learn
 - **Dataset**: 10,000+ articles
 - **Achievements**: Implemented TF-IDF vectorization and topic modeling
-- [📂 View Code](https://github.com/rosalinatorres888/Network-Word-Frequency-Analysis-for-Data-Mining)
+- [📂 View Code](https://github.com/rosalinatorres888/Advanced_Network_Intelligence)
 - 🚧 **Live demo coming soon**
 
 ### 2. Human Activity Monitoring  
