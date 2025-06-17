@@ -136,9 +136,9 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 </div>
 
 ### 1. Network Word Frequency Analysis
-- **Tech Stack**: Python, NLTK, Scikit-learn
-- **Dataset**: 10,000+ articles
-- **Achievements**: Implemented TF-IDF vectorization and topic modeling
+- **Tech Stack**: Python 3.8+, NetworkX3.0+, pandas, NumPy, scikit-learn, community (python-louvain)
+- **Dataset**: 66 articles
+- **Achievements**: The 0.73 correlation between literature gaps and organizational failures 
 - [📂 View Code](https://github.com/rosalinatorres888/Advanced_Network_Intelligence)
 - 🚧 **Live demo coming soon**
 
