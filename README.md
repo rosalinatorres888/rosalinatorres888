@@ -146,7 +146,7 @@ I'm currently pursuing my Master's degree in Data Analytics Engineering at North
 - **Tech Stack**: Python, TensorFlow, Signal Processing
 - **Dataset**: Accelerometer time series data
 - **Achievements**: 92% accuracy in activity classification
-- [📂 View Code](https://github.com/rosalinatorres888/human-activity-entropy/blob/main/torres_rosalina_human_activity_analysis.ipynb)
+- [📂 View Code](https://github.com/rosalinatorres888/human-activity-entropy/)
 
 
 ### 3. Democracy Clustering Analysis
