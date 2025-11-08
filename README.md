@@ -50,7 +50,7 @@ Architected production-grade ML pipeline with real-time WebSocket streaming infr
 ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=rosalinatorres888&theme=react-dark&hide_border=true)
 
 ## 📫 Connect With Me
-- **LinkedIn:** [linkedin.com/in/rosalinatorres](https://linkedin.com/in/rosalinatorres)
+- **LinkedIn:** [linkedin.com/in/rosalinatorres](https://linkedin.com/in/rosalinatorres2)
 - **Portfolio:** [torresos.github.io](https://torresos.github.io)
 - **Email:** torres.ros@northeastern.edu
 
