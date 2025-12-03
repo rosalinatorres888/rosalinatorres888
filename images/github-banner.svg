@@ -1,0 +1,53 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f0f0f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f0f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#grad2)"/>
+  
+  <!-- Grid pattern -->
+  <line x1="0" y1="50" x2="1200" y2="50" stroke="#00ff9d" stroke-width="1" opacity="0.2"/>
+  <line x1="0" y1="150" x2="1200" y2="150" stroke="#00ff9d" stroke-width="1" opacity="0.2"/>
+  <line x1="0" y1="250" x2="1200" y2="250" stroke="#00ff9d" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Accent bars -->
+  <rect x="0" y="0" width="8" height="300" fill="#00ff9d"/>
+  <rect x="1192" y="0" width="8" height="300" fill="#00d2ff"/>
+  
+  <!-- Binary code background -->
+  <text x="50" y="30" font-family="monospace" font-size="14" fill="rgba(0,255,157,0.1)" font-weight="bold">
+    01001101 01001100 01000101 01101110 01100111 01101001 01101110 01100101 01100101 01110010
+  </text>
+  
+  <!-- Main content -->
+  <text x="100" y="100" font-family="'Courier New', monospace" font-size="24" fill="#00ff9d" font-weight="bold">
+    &gt; INITIALIZING_PROFILE...
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="white">
+    ROSALINA TORRES
+  </text>
+  <text x="100" y="190" font-family="'Courier New', monospace" font-size="24" fill="#00d2ff">
+    ML/AI Engineer | Production Systems | 1000+ Users
+  </text>
+  <text x="100" y="230" font-family="'Courier New', monospace" font-size="18" fill="rgba(255,255,255,0.7)">
+    Northeastern MS Data Analytics • 4.0 GPA • Python | TensorFlow | Airflow
+  </text>
+  
+  <!-- Stats decoration -->
+  <rect x="950" y="80" width="200" height="140" rx="10" fill="rgba(0,255,157,0.1)" stroke="#00ff9d" stroke-width="2"/>
+  <text x="1050" y="110" font-family="monospace" font-size="18" fill="#00ff9d" text-anchor="middle" font-weight="bold">
+    PRODUCTION
+  </text>
+  <text x="1050" y="140" font-family="Arial, sans-serif" font-size="36" fill="white" text-anchor="middle" font-weight="bold">
+    1000+
+  </text>
+  <text x="1050" y="165" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.8)" text-anchor="middle">
+    ACTIVE USERS
+  </text>
+  <text x="1050" y="195" font-family="monospace" font-size="14" fill="#00d2ff" text-anchor="middle">
+    99.9% UPTIME
+  </text>
+</svg>

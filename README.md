@@ -1,3 +1,5 @@
+![Header Banner](images/github-banner.svg)
+
 # Hi, I'm Rosalina Torres 👋
 
 MS Data Analytics Engineering student @ Northeastern University (April 2026) specializing in ML/AI systems and production data pipelines. Building intelligent, scalable systems that solve real problems. **Currently serving 1000+ users in production with deployed ML applications.**
