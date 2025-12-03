@@ -6,19 +6,6 @@ MS Data Analytics Engineering student @ Northeastern University (April 2026) spe
 
 ---
 
-## ⭐ Production Impact
-
-**Real systems serving real users:**
-
-| System | Users | Uptime | Impact |
-|--------|-------|--------|--------|
-| 🏥 Boston Heatwave Monitor | **1000+** | 99.9% | Public health early warning system |
-| ⚡ Crypto ML Pipeline | In Dev | - | 85% prediction accuracy on live data |
-| 🎯 Career Intelligence | Active | - | 70% workflow automation, 45% response rate boost |
-
-[🚀 **View Live Dashboard**](https://boston-weather-live.streamlit.app/) ← Production ML system with 1000+ active users
-
----
 
 ## 🏗️ Portfolio Architecture
 
@@ -37,6 +24,17 @@ MS Data Analytics Engineering student @ Northeastern University (April 2026) spe
 
 ---
 
+## ⭐ Production Impact
+
+**Real systems serving real users:**
+
+| System | Users | Uptime | Impact |
+|--------|-------|--------|--------|
+| 🏥 Boston Heatwave Monitor | **1000+** | 99.9% | Public health early warning system |
+| ⚡ Crypto ML Pipeline | In Dev | - | 85% prediction accuracy on live data |
+| 🎯 Career Intelligence | Active | - | 70% workflow automation, 45% response rate boost |
+
+[🚀 **View Live Dashboard**](https://boston-weather-live.streamlit.app/) ← Production ML system with 1000+ active users
 ## 🚀 Currently
 
 - 🎓 MS Data Analytics Engineering @ Northeastern (GPA: 4.0)
