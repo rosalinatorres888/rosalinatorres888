@@ -1,4 +1,4 @@
-[![Header Banner](images/github-banner.svg)](images/github-banner.svg)
+[![Header Banner](images/github-banner.svg)](images/github-banner-new.svg)
 
 # Hi, I'm Rosalina Torres 👋
 
