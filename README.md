@@ -1,75 +1,201 @@
-![Header Banner](images/github-banner.svg)
+[![Header Banner](images/github-banner.svg)](images/github-banner.svg)
 
 # Hi, I'm Rosalina Torres 👋
 
-MS Data Analytics Engineering student @ Northeastern University (April 2026) specializing in ML/AI systems and production data pipelines. Building intelligent, scalable systems that solve real problems. **Currently serving 1000+ users in production with deployed ML applications.**
+MS Data Analytics Engineering student @ Northeastern University (August 2026) specializing in ML/AI systems and production data pipelines. Building intelligent, scalable systems that solve real problems.
 
 ---
 
+## 🧠 Portfolio Architecture
 
-## 🏗️ Portfolio Architecture
+**My projects form an interconnected ML ecosystem powered by a unified Memory Brain:**
 
-**My projects form an interconnected ML ecosystem, not isolated demos:**
+```mermaid
+flowchart TB
+    subgraph Infra["Infrastructure"]
+        Ollama["Ollama"]
+        AgentCmd["Agent Commander"]
+        Ollama -.-> AgentCmd
+    end
 
-![Portfolio Architecture](images/portfolio-architecture.png)
+    subgraph Agents["Autonomous Agents (21)"]
+        direction LR
+        AutoAgents["Automation<br/>Agents"]
+        JobSwarm["Job Hunting<br/>Swarm"]
+        MLToolkit["ML/AI<br/>Toolkit"]
+        LinkedInAgent["LinkedIn<br/>Analyzer"]
+    end
 
-*This diagram illustrates how my 15+ projects connect: from data foundation (UCI HAR 10k+ samples, Federal Economic Data) through AI-powered strategic pillars (MotionInsight, Game Theory, Career Intelligence) to production-deployed applications (Streamlit dashboards serving real users), all orchestrated by cost-effective local LLM infrastructure.*
+    subgraph MCPLayer["MCP Integration"]
+        direction LR
+        MemoryMCP["Memory Brain<br/>MCP"]
+        MySQLMCP["MySQL MCP<br/>(Career)"]
+        MongoMCP["MongoDB<br/>MCP"]
+        FileMCP["Filesystem<br/>MCP"]
+    end
 
-### Architecture Highlights:
-- **Data Foundation:** UCI HAR Dataset (10k+ samples), Federal Economic Data, Portfolio & Resume Data
-- **Strategic AI Pillars:** MotionInsight (Entropy-Complexity), Game Theory (Nash Equilibrium), Career Intelligence (Archetype Matching)
-- **Deployed Applications:** Production Streamlit/React dashboards serving 1000+ users
-- **Infrastructure:** Ollama/Local LLMs (Llama 3, Mistral) reducing API costs by 90%
-- **Cross-Project Synergy:** Agent orchestration enabling reusable ML components
+    subgraph Brain["Memory Brain"]
+        SQLite[("SQLite<br/>848+ Records<br/>Agent Coordination")]
+    end
+
+    subgraph Data["Data Sources"]
+        direction LR
+        UCI[("UCI HAR<br/>10k+ Samples")]
+        Federal[("Federal<br/>Economic")]
+        MySQLDB[("MySQL<br/>Career DB")]
+        MongoDB[("MongoDB<br/>Extended")]
+        Portfolio[("Portfolio &<br/>Resume")]
+    end
+
+    subgraph Projects["Strategic Innovation Pillars"]
+        direction LR
+        Motion["MotionInsight"]
+        Game["Game Theory"]
+        Career["Career Intel"]
+    end
+
+    subgraph Apps["Deployed Applications"]
+        direction LR
+        MotionApp["MotionInsight"]
+        ForecastApp["ForecastPro"]
+        JobHub["Job Hunting"]
+    end
+
+    AgentCmd --> Agents
+    AgentCmd --> MCPLayer
+
+    AutoAgents --> SQLite
+    JobSwarm --> SQLite
+    MLToolkit --> SQLite
+    LinkedInAgent --> SQLite
+
+    MemoryMCP --> SQLite
+    MySQLMCP --> MySQLDB
+    MongoMCP --> MongoDB
+    FileMCP --> Portfolio
+
+    SQLite --> Motion
+    SQLite --> Career
+
+    UCI --> Motion
+    Federal --> Game
+    MySQLDB --> Career
+    MongoDB --> Career
+    Portfolio --> Career
+
+    Motion --> MotionApp
+    Game --> ForecastApp
+    Career --> JobHub
+
+    classDef infra fill:#424242,stroke:#212121,color:#fff
+    classDef mcp fill:#7b1fa2,stroke:#6a1b9a,color:#fff
+    classDef brain fill:#e91e63,stroke:#c2185b,color:#fff
+    classDef agents fill:#ff6f00,stroke:#e65100,color:#fff
+    classDef data fill:#0277bd,stroke:#01579b,color:#fff
+    classDef projects fill:#7b1fa2,stroke:#6a1b9a,color:#fff
+    classDef apps fill:#00695c,stroke:#004d40,color:#fff
+
+    class Ollama,AgentCmd infra
+    class MemoryMCP,MySQLMCP,MongoMCP,FileMCP mcp
+    class SQLite brain
+    class AutoAgents,JobSwarm,MLToolkit,LinkedInAgent agents
+    class UCI,Federal,MySQLDB,MongoDB,Portfolio data
+    class Motion,Game,Career projects
+    class MotionApp,ForecastApp,JobHub apps
+```
+
+### Architecture Highlights
+
+| Layer | Components | Purpose |
+|-------|------------|---------|
+| **🧠 Memory Brain** | SQLite (848+ records) | Central coordination hub for all agents |
+| **🔌 MCP Integration** | 4 MCP servers | Claude access to MySQL, MongoDB, SQLite, Filesystem |
+| **🤖 Autonomous Agents** | 21 specialized agents | Job hunting, ML/AI toolkit, automation, LinkedIn |
+| **🗄️ Data Foundation** | 5 databases | UCI HAR, Federal Economic, Career DB, Portfolio |
+| **🚀 Strategic Pillars** | 3 flagship projects | MotionInsight, Game Theory, Career Intelligence |
 
 ---
 
-## ⭐ Production Impact
+## ⭐ Flagship Projects
 
-**Real systems serving real users:**
+| System | Key Metric | Tech Stack | Status |
+|--------|------------|------------|--------|
+| ✨ **Career Intelligence System** | **92.3% semantic match** | MySQL, MongoDB, Sentence Transformers | Active |
+| 🧠 **Memory Brain** | **848+ records, 21 agents** | SQLite, MCP Protocol, Ollama | Active |
+| 📊 **LinkedIn Brand Analyzer** | NLP + Network Analysis | SpaCy, NetworkX, PyVis | Active |
+| 🤖 **ARIA** | Autonomous Career Assistant | Python, Email Automation, Job APIs | In Development |
 
-| System | Users | Uptime | Impact |
-|--------|-------|--------|--------|
-| 🏥 Boston Heatwave Monitor | **1000+** | 99.9% | Public health early warning system |
-| ⚡ Crypto ML Pipeline | In Dev | - | 85% prediction accuracy on live data |
-| 🎯 Career Intelligence | Active | - | 70% workflow automation, 45% response rate boost |
+---
 
-[🚀 **View Live Dashboard**](https://boston-weather-live.streamlit.app/) ← Production ML system with 1000+ active users
+## 🎯 Featured Projects
+
+### 🏆 Career Intelligence System
+> **92.3% semantic matching accuracy** | MySQL + MongoDB + AI-powered resume generation
+
+An intelligent career management platform that matches job opportunities to candidate profiles using advanced NLP and semantic similarity. Features automated resume tailoring, cover letter generation, and application tracking.
+
+**Tech:** Python, MySQL, MongoDB, Sentence Transformers, Streamlit, MCP Integration
+
+[View Project](https://github.com/rosalinatorres888/career-intelligence-system)
+
+---
+
+### 🧠 Memory Brain: Multi-Agent Coordination
+> **848+ records** | **21 autonomous agents** | Central orchestration layer
+
+A unified coordination system that connects all my AI agents through a shared SQLite database. Implements Model Context Protocol (MCP) servers for seamless Claude integration across MySQL, MongoDB, and filesystem resources.
+
+**Tech:** Python, SQLite, MCP Protocol, Ollama, Local LLMs
+
+[View Project](https://github.com/rosalinatorres888/memory-brain)
+
+---
+
+### 📊 LinkedIn Brand Analyzer
+> NLP-powered brand sentiment & network analysis
+
+Analyzes LinkedIn engagement patterns using NLP (SpaCy, VADER) for sentiment analysis and NetworkX for graph-based network clustering. Identifies which content topics drive high-value engagement from recruiters and industry connections.
+
+**Tech:** Python, SpaCy, NetworkX, PyVis, BERTopic, Streamlit
+
+[View Project](https://github.com/rosalinatorres888/linkedin-brand-analyzer)
+
+---
+
+### 🤖 ARIA - Autonomous Career Assistant
+> AI-powered job search automation
+
+An autonomous career assistant that monitors job boards, matches opportunities to my profile, and sends personalized notifications. Integrates with Memory Brain for coordinated job search across multiple platforms.
+
+**Tech:** Python, Email Automation, Job APIs, Memory Brain Integration
+
+[View Project](https://github.com/rosalinatorres888/aria-career-assistant)
+
+---
+
+### 📊 Additional Projects
+
+| Project | Impact | Tech Stack | Links |
+|---------|--------|------------|-------|
+| **MotionInsight** | Entropy-Complexity Analysis | Python, Signal Processing, Streamlit | [Code](https://github.com/rosalinatorres888/human-activity-entropy) |
+| **Democracy Clustering** | 195 Countries · 0.89 Silhouette | R, K-means, PCA | [Code](https://github.com/rosalinatorres888/democracy-clustering-analysis) |
+| **Crypto ML Pipeline** | 85% Prediction Accuracy | TensorFlow, Airflow, PostgreSQL | [Code](https://github.com/rosalinatorres888/crypto-ml-pipeline) |
+| **Network Intelligence** | 0.73 Correlation Discovery | NetworkX, NLP, Graph Analysis | [Code](https://github.com/rosalinatorres888/Advanced_Network_Intelligence) |
+
+---
+
 ## 🚀 Currently
 
-- 🎓 MS Data Analytics Engineering @ Northeastern (GPA: 4.0)
-- 🤖 Specializing in ML/AI, Semantic Matching, Production Pipelines
-- 🔍 Seeking Data Engineering Internships for January 2026
-- 💡 Building autonomous AI career assistant (ARIA)
+- 🎓 MS Data Analytics Engineering @ Northeastern (GPA: 4.0, Expected August 2026)
+- 🤖 Building autonomous AI agents with Memory Brain coordination
+- 🔌 Implementing MCP servers for AI-database integration
+- 🎯 Career Intelligence System achieving 92.3% semantic matching
+- 📝 Graduate Student Ambassador, College of Engineering
 
-**Available immediately for ML/AI Engineering internships and full-time positions**
+**Available for ML/AI Engineering roles**
 - 📍 Open to relocation | Remote-friendly
 - 💼 Authorized to work in the US
 - 📅 Can start: Immediately
-
----
-
-## 💼 Experience
-
-**AI Data Trainer (Bilingual)** @ Alignerr (by Labelbox) *(2023 - Present)*
-- Working with generative AI and large language models for data labeling and model evaluation
-- Technology Focus: Specialized in LLM evaluation for factual accuracy and ethical integrity
-- Platforms: Generative AI alignment tools and human-in-the-loop ML systems
-
-**Regional Manager, Channel & Enterprise Sales (LATAM)** @ Collibra *(2018 - 2021)*
-- Led data intelligence solution sales across LATAM region
-- Technology Focus: Enterprise-wide data governance, data catalog, and data intelligence
-- Platform Expertise: Data lineage, metadata management, and AI governance frameworks
-
-**Regional Sales Manager, Data Protection & Disaster Recovery** @ Zerto *(2015 - 2019)*
-- Consistently exceeded quotas (up to 257%), earning Global Sales of the Year honors
-- Technology Focus: IT resilience platforms for cloud data protection and disaster recovery
-- Platform Expertise: Enterprise-grade continuous data protection and cloud mobility
-
-**Business Development Executive, Cloud, Middleware & Database** @ Oracle Corp *(Earlier Career)*
-- Exceeded quarterly targets by 135%, earning Top Gun and Fast Start awards
-- Technology Focus: Database management systems, cloud infrastructure, and middleware
-- Platform Expertise: Oracle Cloud Infrastructure, Database Management Systems, Middleware Solutions
 
 ---
 
@@ -85,58 +211,62 @@ MS Data Analytics Engineering student @ Northeastern University (April 2026) spe
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Scikit Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
-### Data & MLOps
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white)
+### Databases & Infrastructure
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ### Cloud & Deployment
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 
 ---
 
 ## 📊 GitHub Stats
 
-<div align="center">
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rosalinatorres888&show_icons=true&theme=radical&hide_border=true&count_private=true)
 
-![](https://github-readme-stats.vercel.app/api?username=rosalinatorres888&show_icons=true&theme=radical&hide_border=true&count_private=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rosalinatorres888&layout=compact&theme=radical&hide_border=true)
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=rosalinatorres888&layout=compact&theme=radical&hide_border=true)
-
-![](https://github-readme-streak-stats.herokuapp.com/?user=rosalinatorres888&theme=radical&hide_border=true)
-
-</div>
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rosalinatorres888&theme=radical&hide_border=true)
 
 ---
 
-## 🎯 Featured Projects
+## 💼 Experience
 
-| Project | Impact | Tech Stack | Links |
-|---------|--------|------------|-------|
-| **Human Activity Monitoring** | 🔥 **1000+ Active Users** | Python, Streamlit, Ensemble ML | [Live Demo](https://boston-weather-live.streamlit.app/) · [Code](https://github.com/rosalinatorres888/human-activity-entropy) |
-| **Crypto ML Pipeline** | ⚡ 85% Prediction Accuracy | TensorFlow, Airflow, PostgreSQL | [Live Demo](https://rosalinatorres888.github.io/crypto-ml-pipeline/) · [Code](https://github.com/rosalinatorres888/crypto-ml-pipeline) |
-| **Democracy Clustering** | 📊 195 Countries · 7 Clusters | R, K-means, 0.89 Silhouette | [Code](https://github.com/rosalinatorres888/democracy-clustering-analysis) |
-| **Network Intelligence** | 🕸️ 0.73 Correlation Discovery | NetworkX, NLP, Graph Analysis | [Code](https://github.com/rosalinatorres888/Advanced_Network_Intelligence) |
+**AI Data Trainer (Bilingual)** @ Alignerr *(2023 - Present)*
+- Evaluating LLM responses for factual accuracy, bias detection, and ethical integrity
+- Working with generative AI alignment tools and human-in-the-loop ML systems
+
+**Regional Manager, Channel & Enterprise Sales (LATAM)** @ Collibra *(2018 - 2021)*
+- Led data intelligence solution sales generating $2.4M+ revenue
+- Enterprise data governance, catalog, and AI governance frameworks
+
+**Regional Sales Manager** @ Zerto *(2015 - 2019)*
+- Exceeded quotas up to 257%, Global Sales of the Year
+- Cloud data protection and disaster recovery platforms
+
+**Business Development Executive** @ Oracle Corp *(Earlier Career)*
+- Exceeded targets by 135%, Top Gun and Fast Start awards
+- Database management, cloud infrastructure, middleware solutions
 
 ---
 
 ## 🎓 Education
 
-**Northeastern University**  
-M.S. Data Analytics Engineering | Boston, MA | Expected 2026
-- 4.0 GPA
-- Focus: Machine Learning & Artificial Intelligence
+**Northeastern University** | M.S. Data Analytics Engineering | Boston, MA | Expected August 2026
+- 4.0 GPA | Graduate Student Ambassador, College of Engineering
+- Focus: Machine Learning, AI Systems, Production Pipelines
 
-**Bridgewater State University**  
-B.S. Economics | Boston, MA
+**Bridgewater State University** | B.S. Economics | Boston, MA
 
-**University of Limerick**  
-Study Abroad: European Union Economics & Monetary Policy Analysis | Ireland
+**University of Limerick** | Study Abroad | Ireland
+- European Union Economics & Monetary Policy Analysis
 
 ---
 
@@ -148,37 +278,15 @@ Study Abroad: European Union Economics & Monetary Policy Analysis | Ireland
 
 ---
 
-## 🧠 Technical Skills
-
-### Machine Learning
-- **Models Built:** Neural Networks, Random Forests, XGBoost, LSTM, BERT
-- **Frameworks:** TensorFlow, PyTorch, Keras, Scikit-learn
-- **MLOps:** Model deployment, A/B testing, monitoring
-- **Current Focus:** LLMs, Generative AI, Production ML Systems
-
-### Core Competencies
-- Data-driven decision making
-- Complex problem solving
-- Strategic planning & execution
-- Cross-functional collaboration
-- Technical concept explanation
-- AI governance & ethics
-- Bilingual communication (English, Spanish)
-
----
-
 ## 📫 Connect With Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rosalina-torres)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://rosalinatorres888.github.io)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://rosalina.sites.northeastern.edu)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:torres.ros@northeastern.edu)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rosalinatorres888)
 
 ---
 
-<div align="center">
+**💡 Open to collaboration on ML/AI projects and full-time opportunities!**
 
-**💡 Open to collaboration on ML/AI projects and internship opportunities!**
-
-*Last updated: December 2024*
-
-</div>
+*Last updated: January 2026*
