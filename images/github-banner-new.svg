@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+  <defs>
+    <!-- Gradient background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="50%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    
+    <!-- Accent gradient for highlight box -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#238636"/>
+      <stop offset="100%" style="stop-color:#2ea043"/>
+    </linearGradient>
+    
+    <!-- Purple accent for secondary box -->
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="0.5"/>
+    </pattern>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  <rect width="1200" height="300" fill="url(#grid)" opacity="0.4"/>
+  
+  <!-- Decorative circuit lines -->
+  <g stroke="#238636" stroke-width="1" opacity="0.3">
+    <path d="M 0 50 L 100 50 L 120 70 L 200 70" fill="none"/>
+    <path d="M 0 250 L 80 250 L 100 230 L 180 230" fill="none"/>
+    <path d="M 1200 80 L 1100 80 L 1080 100 L 1000 100" fill="none"/>
+    <path d="M 1200 220 L 1120 220 L 1100 200 L 1020 200" fill="none"/>
+    <circle cx="200" cy="70" r="3" fill="#238636"/>
+    <circle cx="180" cy="230" r="3" fill="#238636"/>
+    <circle cx="1000" cy="100" r="3" fill="#238636"/>
+    <circle cx="1020" cy="200" r="3" fill="#238636"/>
+  </g>
+  
+  <!-- Terminal prompt decoration -->
+  <text x="60" y="45" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#7ee787" opacity="0.6">
+    > initializing autonomous systems...
+  </text>
+  
+  <!-- Main content area -->
+  <g transform="translate(60, 80)">
+    <!-- Name -->
+    <text x="0" y="50" font-family="'Space Grotesk', 'SF Pro Display', system-ui" font-size="52" font-weight="700" fill="#f0f6fc" letter-spacing="-1">
+      ROSALINA TORRES
+    </text>
+    
+    <!-- Title -->
+    <text x="0" y="90" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="20" fill="#7ee787">
+      ML/AI Engineer  |  Autonomous AI Systems  |  Memory Brain Architect
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="130" font-family="'Inter', 'SF Pro Text', system-ui" font-size="14" fill="#8b949e">
+      Northeastern MS Data Analytics  •  4.0 GPA  •  Python | TensorFlow | MCP Protocol | Sentence Transformers
+    </text>
+  </g>
+  
+  <!-- Stats boxes -->
+  <g transform="translate(820, 70)">
+    <!-- Primary metric box -->
+    <rect x="0" y="0" width="160" height="80" rx="8" fill="url(#accentGradient)" opacity="0.9"/>
+    <text x="80" y="35" font-family="'Space Grotesk', system-ui" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">
+      92.3%
+    </text>
+    <text x="80" y="55" font-family="'Inter', system-ui" font-size="11" fill="#ffffff" text-anchor="middle" opacity="0.9">
+      SEMANTIC MATCH
+    </text>
+    <text x="80" y="70" font-family="'Inter', system-ui" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.7">
+      Career Intelligence
+    </text>
+    
+    <!-- Secondary metric box -->
+    <rect x="170" y="0" width="160" height="80" rx="8" fill="url(#purpleGradient)" opacity="0.9"/>
+    <text x="250" y="35" font-family="'Space Grotesk', system-ui" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">
+      21
+    </text>
+    <text x="250" y="55" font-family="'Inter', system-ui" font-size="11" fill="#ffffff" text-anchor="middle" opacity="0.9">
+      AI AGENTS
+    </text>
+    <text x="250" y="70" font-family="'Inter', system-ui" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.7">
+      Memory Brain
+    </text>
+  </g>
+  
+  <!-- Bottom stats row -->
+  <g transform="translate(820, 160)">
+    <rect x="0" y="0" width="330" height="50" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+    
+    <!-- Stat 1 -->
+    <text x="55" y="22" font-family="'Space Grotesk', system-ui" font-size="16" font-weight="600" fill="#f0f6fc" text-anchor="middle">848+</text>
+    <text x="55" y="38" font-family="'Inter', system-ui" font-size="9" fill="#8b949e" text-anchor="middle">MEMORY RECORDS</text>
+    
+    <!-- Divider -->
+    <line x1="110" y1="10" x2="110" y2="40" stroke="#30363d" stroke-width="1"/>
+    
+    <!-- Stat 2 -->
+    <text x="165" y="22" font-family="'Space Grotesk', system-ui" font-size="16" font-weight="600" fill="#f0f6fc" text-anchor="middle">4 MCP</text>
+    <text x="165" y="38" font-family="'Inter', system-ui" font-size="9" fill="#8b949e" text-anchor="middle">SERVERS</text>
+    
+    <!-- Divider -->
+    <line x1="220" y1="10" x2="220" y2="40" stroke="#30363d" stroke-width="1"/>
+    
+    <!-- Stat 3 -->
+    <text x="275" y="22" font-family="'Space Grotesk', system-ui" font-size="16" font-weight="600" fill="#7ee787" text-anchor="middle">OPEN</text>
+    <text x="275" y="38" font-family="'Inter', system-ui" font-size="9" fill="#8b949e" text-anchor="middle">TO ML/AI ROLES</text>
+  </g>
+  
+  <!-- Decorative nodes -->
+  <g fill="#238636" opacity="0.5">
+    <circle cx="50" cy="150" r="4"/>
+    <circle cx="35" cy="180" r="2"/>
+    <circle cx="1150" cy="150" r="4"/>
+    <circle cx="1165" cy="120" r="2"/>
+  </g>
+  
+  <!-- Bottom code decoration -->
+  <text x="60" y="280" font-family="'JetBrains Mono', monospace" font-size="10" fill="#484f58">
+    class MemoryBrain: agents=21, records=848, mcp_servers=4  # Unified AI Coordination Layer
+  </text>
+</svg>
