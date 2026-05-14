@@ -2,7 +2,9 @@
 
 # Hi, I'm Rosalina Torres 👋
 
-MS Data Analytics Engineering student @ Northeastern University (August 2026) specializing in ML/AI systems and production data pipelines. Building intelligent, scalable systems that solve real problems.
+MS Data Analytics Engineering @ Northeastern University · expected August 2026 · 3.7 GPA
+
+Specializing in ML/AI systems, agentic architectures, and production data pipelines. Building intelligent, scalable systems that solve real problems — from databases to deployment.
 
 ---
 
@@ -120,21 +122,23 @@ flowchart TB
 
 | System | Key Metric | Tech Stack | Status |
 |--------|------------|------------|--------|
-| ✨ **Career Intelligence System** | **92.3% semantic match** | MySQL, MongoDB, Sentence Transformers | Active |
+| ✨ **Career Intelligence System** | **92.3% semantic match** · built ground-up | MySQL (architecture + conceptual design), MongoDB, SQLite, Sentence Transformers, Streamlit | Active |
+| 🤖 **ARIA** | **Autonomous multi-agent workflow** built on CIS | Python, Memory Brain, Job APIs, Email Automation | Active |
 | 🧠 **Memory Brain** | **848+ records, 21 agents** | SQLite, MCP Protocol, Ollama | Active |
+| 🤗 **MENTOR (Mistral-7B)** | **Fine-tuned bilingual EN/ES tutor** · published on Hugging Face | Mistral-7B, PBL pedagogy, fine-tuning | Published |
+| 💸 **Multi-Agent LLM Router** | **90% inference cost reduction** | Python, local-first LLMs, complexity-based routing | Active |
 | 📊 **LinkedIn Brand Analyzer** | NLP + Network Analysis | SpaCy, NetworkX, PyVis | Active |
-| 🤖 **ARIA** | Autonomous Career Assistant | Python, Email Automation, Job APIs | In Development |
 
 ---
 
 ## 🎯 Featured Projects
 
 ### 🏆 Career Intelligence System
-> **92.3% semantic matching accuracy** | MySQL + MongoDB + AI-powered resume generation
+> **92.3% semantic matching accuracy** | Built ground-up: database architecture → semantic layer → UI
 
-An intelligent career management platform that matches job opportunities to candidate profiles using advanced NLP and semantic similarity. Features automated resume tailoring, cover letter generation, and application tracking.
+An intelligent career management platform that matches job opportunities to candidate profiles using advanced NLP and semantic similarity. I designed and built every layer: MySQL conceptual + physical database design, MongoDB for extended candidate data, SQLite for coordination, semantic matching pipeline, and the Streamlit interface. Features automated resume tailoring, cover letter generation, and application tracking.
 
-**Tech:** Python, MySQL, MongoDB, Sentence Transformers, Streamlit, MCP Integration
+**Tech:** Python, MySQL (architecture + conceptual design), MongoDB, SQLite, Sentence Transformers, Streamlit, MCP Integration
 
 [View Project](https://github.com/rosalinatorres888/career-intelligence-system)
 
@@ -162,14 +166,36 @@ Analyzes LinkedIn engagement patterns using NLP (SpaCy, VADER) for sentiment ana
 
 ---
 
-### 🤖 ARIA - Autonomous Career Assistant
-> AI-powered job search automation
+### 🤖 ARIA — Autonomous Career Assistant
+> Multi-agent autonomous workflow built on top of the Career Intelligence System
 
-An autonomous career assistant that monitors job boards, matches opportunities to my profile, and sends personalized notifications. Integrates with Memory Brain for coordinated job search across multiple platforms.
+Where CIS provides the foundational data + semantic-matching platform, ARIA adds the autonomous agent layer: continuously monitoring job boards, matching opportunities against the CIS knowledge base, generating tailored outreach, and triggering notifications without human intervention. Integrates with Memory Brain for coordinated state across runs.
 
-**Tech:** Python, Email Automation, Job APIs, Memory Brain Integration
+**Tech:** Python, Memory Brain coordination, Job APIs, Email Automation, agent orchestration
 
 [View Project](https://github.com/rosalinatorres888/aria-career-assistant)
+
+---
+
+### 🤗 MENTOR — Fine-Tuned Mistral-7B Teaching Assistant
+> Bilingual (EN/ES) project-based learning tutor · published on Hugging Face
+
+A fine-tuned Mistral-7B model designed for project-based learning pedagogy: teaches by asking, not lecturing. Responds in both English and Spanish. Built around the principle that the best teachers help learners discover answers themselves.
+
+**Tech:** Mistral-7B, fine-tuning, PBL pedagogy, bilingual instruction tuning
+
+[View on Hugging Face](https://huggingface.co/spanishrose/mentor-mistral-7b-pbl)
+
+---
+
+### 💸 Multi-Agent LLM Router
+> 90% inference cost reduction via local-first, complexity-based routing
+
+Intelligent LLM routing system that classifies query complexity and routes accordingly: simple queries stay local (Ollama), complex queries escalate to cloud models. Reduces overall inference spend by ~90% without sacrificing output quality on harder tasks.
+
+**Tech:** Python, local-first LLMs (Ollama), complexity classification, fallback architecture
+
+[View Project](https://github.com/rosalinatorres888/multi-agent-llm-router)
 
 ---
 
@@ -186,7 +212,7 @@ An autonomous career assistant that monitors job boards, matches opportunities t
 
 ## 🚀 Currently
 
-- 🎓 MS Data Analytics Engineering @ Northeastern (GPA: 4.0, Expected August 2026)
+- 🎓 MS Data Analytics Engineering @ Northeastern (GPA: 3.7, Expected August 2026)
 - 🤖 Building autonomous AI agents with Memory Brain coordination
 - 🔌 Implementing MCP servers for AI-database integration
 - 🎯 Career Intelligence System achieving 92.3% semantic matching
@@ -260,7 +286,7 @@ An autonomous career assistant that monitors job boards, matches opportunities t
 ## 🎓 Education
 
 **Northeastern University** | M.S. Data Analytics Engineering | Boston, MA | Expected August 2026
-- 4.0 GPA | Graduate Student Ambassador, College of Engineering
+- 3.7 GPA | Graduate Student Ambassador, College of Engineering
 - Focus: Machine Learning, AI Systems, Production Pipelines
 
 **Bridgewater State University** | B.S. Economics | Boston, MA
@@ -282,6 +308,7 @@ An autonomous career assistant that monitors job boards, matches opportunities t
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rosalina-torres)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://rosalina.sites.northeastern.edu)
+[![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-FFD21E?style=for-the-badge&logoColor=black)](https://huggingface.co/spanishrose)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:torres.ros@northeastern.edu)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rosalinatorres888)
 
@@ -289,4 +316,4 @@ An autonomous career assistant that monitors job boards, matches opportunities t
 
 **💡 Open to collaboration on ML/AI projects and full-time opportunities!**
 
-*Last updated: January 2026*
+*Last updated: May 2026*
