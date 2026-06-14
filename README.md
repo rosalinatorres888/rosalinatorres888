@@ -6,6 +6,128 @@ MS Data Analytics Engineering @ Northeastern University · expected August 2026 
 
 Specializing in ML/AI systems, agentic architectures, and production data pipelines. Building intelligent, scalable systems that solve real problems — from databases to deployment.
 
+> **Available now** · Open to relocation · Remote-friendly · Authorized to work in the US
+
+---
+
+## 🎯 Featured Projects
+
+### 📈 ROSE ALPHA — AI Investment Dashboard
+> **Single-file · 11-tab · live market intelligence terminal** | Claude API + Finnhub + Tavily
+
+A personal AI-powered trading dashboard built around two analyst personas. **Obama** runs agentic market research with live tool use (web search, price feeds, hypothesis testing, scenario modeling). **Trump** predicts chaos event impacts on the portfolio. No build step — just `index.html`.
+
+**Key features:** Macro Regime Detection (classifies Risk-On/Off/Stagflation/Goldilocks every 6h) · Conviction Journal (every AI signal auto-scored vs real price at 7d/30d) · Portfolio Stress Replay (6 historical crashes) · Earnings Watch · Correlation Alerts · Natural Language Trade Journal with bias audit
+
+**Tech:** Vanilla JS/HTML/CSS · Claude API (direct browser) · Finnhub · Tavily · localStorage persistence
+
+[View Project](https://github.com/rosalinatorres888/rose-alpha-dashboard)
+
+---
+
+### 📐 Quant Analytics — Risk & Factor Library
+> **Tested Python library · companion to ROSE ALPHA** | Realized risk metrics across 11-asset universe
+
+A production-quality Python package for realized risk and factor analysis across AAPL, NVDA, MSFT, TSLA, GOOGL, SPY, QQQ, VTI, BTC, ETH, and SOL. The methodology behind the Risk tab in ROSE ALPHA — signal generation lives in the dashboard; the math lives here, with full pytest coverage and no network calls in tests.
+
+**Modules:** `volatility` (21d/63d realized vol, VIX context) · `correlation` (rolling Pearson matrix) · `drawdown` (max drawdown, underwater curves) · `factors` (beta to SPY, growth/value tilt, HHI concentration)
+
+**Tech:** Python 3.10+, yfinance, CoinGecko, NumPy, pandas, pytest, Jupyter
+
+[View Project](https://github.com/rosalinatorres888/quant-analytics)
+
+---
+
+### 🏆 Career Intelligence System
+> **92.3% semantic matching accuracy** | Built ground-up: database architecture → semantic layer → UI
+
+An intelligent career management platform that matches job opportunities to candidate profiles using advanced NLP and semantic similarity. I designed and built every layer: MySQL conceptual + physical database design, MongoDB for extended candidate data, SQLite for coordination, semantic matching pipeline, and the Streamlit interface. Features automated resume tailoring, cover letter generation, and application tracking.
+
+**Tech:** Python, MySQL (architecture + conceptual design), MongoDB, SQLite, Sentence Transformers, Streamlit, MCP Integration
+
+[View Project](https://github.com/rosalinatorres888/career-intelligence-system)
+
+---
+
+### 🧠 Memory Brain: Multi-Agent Coordination
+> **848+ records** | **21 autonomous agents** | Central orchestration layer
+
+A unified coordination system that connects all my AI agents through a shared SQLite database. Implements Model Context Protocol (MCP) servers for seamless Claude integration across MySQL, MongoDB, and filesystem resources.
+
+**Tech:** Python, SQLite, MCP Protocol, Ollama, Local LLMs
+
+[View Project](https://github.com/rosalinatorres888/memory-brain)
+
+---
+
+### 📊 LinkedIn Brand Analyzer
+> NLP-powered brand sentiment & network analysis
+
+Analyzes LinkedIn engagement patterns using NLP (SpaCy, VADER) for sentiment analysis and NetworkX for graph-based network clustering. Identifies which content topics drive high-value engagement from recruiters and industry connections.
+
+**Tech:** Python, SpaCy, NetworkX, PyVis, BERTopic, Streamlit
+
+[View Project](https://github.com/rosalinatorres888/linkedin-brand-analyzer)
+
+---
+
+### 🤖 ARIA — Autonomous Career Assistant
+> Multi-agent autonomous workflow built on top of the Career Intelligence System
+
+Where CIS provides the foundational data + semantic-matching platform, ARIA adds the autonomous agent layer: continuously monitoring job boards, matching opportunities against the CIS knowledge base, generating tailored outreach, and triggering notifications without human intervention. Integrates with Memory Brain for coordinated state across runs.
+
+**Tech:** Python, Memory Brain coordination, Job APIs, Email Automation, agent orchestration
+
+[View Project](https://github.com/rosalinatorres888/aria-career-assistant)
+
+---
+
+### 🤗 MENTOR — Fine-Tuned Mistral-7B Teaching Assistant
+> Bilingual (EN/ES) project-based learning tutor · published on Hugging Face
+
+A fine-tuned Mistral-7B model designed for project-based learning pedagogy: teaches by asking, not lecturing. Responds in both English and Spanish. Built around the principle that the best teachers help learners discover answers themselves.
+
+**Tech:** Mistral-7B, fine-tuning, PBL pedagogy, bilingual instruction tuning
+
+[View on Hugging Face](https://huggingface.co/spanishrose/mentor-mistral-7b-pbl)
+
+---
+
+### 💸 Multi-Agent LLM Router
+> 90% inference cost reduction via local-first, complexity-based routing
+
+Intelligent LLM routing system that classifies query complexity and routes accordingly: simple queries stay local (Ollama), complex queries escalate to cloud models. Reduces overall inference spend by ~90% without sacrificing output quality on harder tasks.
+
+**Tech:** Python, local-first LLMs (Ollama), complexity classification, fallback architecture
+
+[View Project](https://github.com/rosalinatorres888/multi-agent-llm-router)
+
+---
+
+### 📊 Additional Projects
+
+| Project | Impact | Tech Stack | Links |
+|---------|--------|------------|-------|
+| **MotionInsight** | Entropy-Complexity Analysis | Python, Signal Processing, Streamlit | [Code](https://github.com/rosalinatorres888/human-activity-entropy) |
+| **Democracy Clustering** | 195 Countries · 0.89 Silhouette | R, K-means, PCA | [Code](https://github.com/rosalinatorres888/democracy-clustering-analysis) |
+| **Crypto ML Pipeline** | 85% Prediction Accuracy | TensorFlow, Airflow, PostgreSQL | [Code](https://github.com/rosalinatorres888/crypto-ml-pipeline) |
+| **Network Intelligence** | 0.73 Correlation Discovery | NetworkX, NLP, Graph Analysis | [Code](https://github.com/rosalinatorres888/Advanced_Network_Intelligence) |
+
+---
+
+## ⭐ Project Overview
+
+| System | Key Metric | Tech Stack | Status |
+|--------|------------|------------|--------|
+| ✨ **Career Intelligence System** | **92.3% semantic match** · built ground-up | MySQL, MongoDB, SQLite, Sentence Transformers, Streamlit | Active |
+| 🤖 **ARIA** | **Autonomous multi-agent workflow** built on CIS | Python, Memory Brain, Job APIs, Email Automation | Active |
+| 🧠 **Memory Brain** | **848+ records, 21 agents** | SQLite, MCP Protocol, Ollama | Active |
+| 🤗 **MENTOR (Mistral-7B)** | **Fine-tuned bilingual EN/ES tutor** · published on Hugging Face | Mistral-7B, PBL pedagogy, fine-tuning | Published |
+| 💸 **Multi-Agent LLM Router** | **90% inference cost reduction** | Python, local-first LLMs, complexity-based routing | Active |
+| 📊 **LinkedIn Brand Analyzer** | NLP + Network Analysis | SpaCy, NetworkX, PyVis | Active |
+| 📈 **ROSE ALPHA Dashboard** | **11 tabs · live AI analyst · regime detection** · single HTML file | Vanilla JS, Claude API, Finnhub, Tavily | Active |
+| 📐 **Quant Analytics** | **Realized risk library · companion to ROSE ALPHA** · tested Python package | Python, yfinance, NumPy, pytest | Active |
+
 ---
 
 ## 🧠 Portfolio Architecture
@@ -133,123 +255,16 @@ flowchart TB
 
 ---
 
-## 🎯 Featured Projects
-
-### 📈 ROSE ALPHA — AI Investment Dashboard
-> **Single-file · 11-tab · live market intelligence terminal** | Claude API + Finnhub + Tavily
-
-A personal AI-powered trading dashboard built around two analyst personas. **Obama** runs agentic market research with live tool use (web search, price feeds, hypothesis testing, scenario modeling). **Trump** predicts chaos event impacts on the portfolio. No build step — just `index.html`.
-
-**Key features:** Macro Regime Detection (classifies Risk-On/Off/Stagflation/Goldilocks every 6h) · Conviction Journal (every AI signal auto-scored vs real price at 7d/30d) · Portfolio Stress Replay (6 historical crashes) · Earnings Watch · Correlation Alerts · Natural Language Trade Journal with bias audit
-
-**Tech:** Vanilla JS/HTML/CSS · Claude API (direct browser) · Finnhub · Tavily · localStorage persistence
-
-[View Project](https://github.com/rosalinatorres888/rose-alpha-dashboard)
-
----
-
-### 📐 Quant Analytics — Risk & Factor Library
-> **Tested Python library · companion to ROSE ALPHA** | Realized risk metrics across 11-asset universe
-
-A production-quality Python package for realized risk and factor analysis across AAPL, NVDA, MSFT, TSLA, GOOGL, SPY, QQQ, VTI, BTC, ETH, and SOL. The methodology behind the Risk tab in ROSE ALPHA — signal generation lives in the dashboard; the math lives here, with full pytest coverage and no network calls in tests.
-
-**Modules:** `volatility` (21d/63d realized vol, VIX context) · `correlation` (rolling Pearson matrix) · `drawdown` (max drawdown, underwater curves) · `factors` (beta to SPY, growth/value tilt, HHI concentration)
-
-**Tech:** Python 3.10+, yfinance, CoinGecko, NumPy, pandas, pytest, Jupyter
-
-[View Project](https://github.com/rosalinatorres888/quant-analytics)
-
----
-
-### 🏆 Career Intelligence System
-> **92.3% semantic matching accuracy** | Built ground-up: database architecture → semantic layer → UI
-
-An intelligent career management platform that matches job opportunities to candidate profiles using advanced NLP and semantic similarity. I designed and built every layer: MySQL conceptual + physical database design, MongoDB for extended candidate data, SQLite for coordination, semantic matching pipeline, and the Streamlit interface. Features automated resume tailoring, cover letter generation, and application tracking.
-
-**Tech:** Python, MySQL (architecture + conceptual design), MongoDB, SQLite, Sentence Transformers, Streamlit, MCP Integration
-
-[View Project](https://github.com/rosalinatorres888/career-intelligence-system)
-
----
-
-### 🧠 Memory Brain: Multi-Agent Coordination
-> **848+ records** | **21 autonomous agents** | Central orchestration layer
-
-A unified coordination system that connects all my AI agents through a shared SQLite database. Implements Model Context Protocol (MCP) servers for seamless Claude integration across MySQL, MongoDB, and filesystem resources.
-
-**Tech:** Python, SQLite, MCP Protocol, Ollama, Local LLMs
-
-[View Project](https://github.com/rosalinatorres888/memory-brain)
-
----
-
-### 📊 LinkedIn Brand Analyzer
-> NLP-powered brand sentiment & network analysis
-
-Analyzes LinkedIn engagement patterns using NLP (SpaCy, VADER) for sentiment analysis and NetworkX for graph-based network clustering. Identifies which content topics drive high-value engagement from recruiters and industry connections.
-
-**Tech:** Python, SpaCy, NetworkX, PyVis, BERTopic, Streamlit
-
-[View Project](https://github.com/rosalinatorres888/linkedin-brand-analyzer)
-
----
-
-### 🤖 ARIA — Autonomous Career Assistant
-> Multi-agent autonomous workflow built on top of the Career Intelligence System
-
-Where CIS provides the foundational data + semantic-matching platform, ARIA adds the autonomous agent layer: continuously monitoring job boards, matching opportunities against the CIS knowledge base, generating tailored outreach, and triggering notifications without human intervention. Integrates with Memory Brain for coordinated state across runs.
-
-**Tech:** Python, Memory Brain coordination, Job APIs, Email Automation, agent orchestration
-
-[View Project](https://github.com/rosalinatorres888/aria-career-assistant)
-
----
-
-### 🤗 MENTOR — Fine-Tuned Mistral-7B Teaching Assistant
-> Bilingual (EN/ES) project-based learning tutor · published on Hugging Face
-
-A fine-tuned Mistral-7B model designed for project-based learning pedagogy: teaches by asking, not lecturing. Responds in both English and Spanish. Built around the principle that the best teachers help learners discover answers themselves.
-
-**Tech:** Mistral-7B, fine-tuning, PBL pedagogy, bilingual instruction tuning
-
-[View on Hugging Face](https://huggingface.co/spanishrose/mentor-mistral-7b-pbl)
-
----
-
-### 💸 Multi-Agent LLM Router
-> 90% inference cost reduction via local-first, complexity-based routing
-
-Intelligent LLM routing system that classifies query complexity and routes accordingly: simple queries stay local (Ollama), complex queries escalate to cloud models. Reduces overall inference spend by ~90% without sacrificing output quality on harder tasks.
-
-**Tech:** Python, local-first LLMs (Ollama), complexity classification, fallback architecture
-
-[View Project](https://github.com/rosalinatorres888/multi-agent-llm-router)
-
----
-
-### 📊 Additional Projects
-
-| Project | Impact | Tech Stack | Links |
-|---------|--------|------------|-------|
-| **MotionInsight** | Entropy-Complexity Analysis | Python, Signal Processing, Streamlit | [Code](https://github.com/rosalinatorres888/human-activity-entropy) |
-| **Democracy Clustering** | 195 Countries · 0.89 Silhouette | R, K-means, PCA | [Code](https://github.com/rosalinatorres888/democracy-clustering-analysis) |
-| **Crypto ML Pipeline** | 85% Prediction Accuracy | TensorFlow, Airflow, PostgreSQL | [Code](https://github.com/rosalinatorres888/crypto-ml-pipeline) |
-| **Network Intelligence** | 0.73 Correlation Discovery | NetworkX, NLP, Graph Analysis | [Code](https://github.com/rosalinatorres888/Advanced_Network_Intelligence) |
-
----
-
-## 🚀 Currently
+## 🚀 Currently Building
 
 - 🎓 MS Data Analytics Engineering @ Northeastern (GPA: 3.7, Expected August 2026)
-- 🤖 Building autonomous AI agents with Memory Brain coordination
-- 🔌 Implementing MCP servers for AI-database integration
-- 🎯 Career Intelligence System achieving 92.3% semantic matching
+- 🤖 Autonomous AI agents with Memory Brain coordination
+- 🔌 MCP servers for AI-database integration
 - 📝 Graduate Student Ambassador, College of Engineering
 
-**Available for ML/AI Engineering roles**
-- 📍 Open to relocation | Remote-friendly
-- 💼 Authorized to work in the US
-- 📅 Can start: Immediately
+---
+
+**💼 Open to ML/AI Engineering roles · Available immediately · Open to relocation · Remote-friendly · Authorized to work in the US**
 
 ---
 
@@ -294,8 +309,9 @@ Intelligent LLM routing system that classifies query complexity and routes accor
 ## 💼 Experience
 
 **AI Data Trainer (Bilingual)** @ Alignerr *(2023 - Present)*
-- Evaluating LLM responses for factual accuracy, bias detection, and ethical integrity
-- Working with generative AI alignment tools and human-in-the-loop ML systems
+- RLHF annotation and preference ranking for frontier LLM training pipelines
+- Bilingual (EN/ES) evaluation of model outputs for factual accuracy, bias, and safety across reasoning and coding tasks
+- Human-in-the-loop feedback specialist on alignment tooling used in production model iterations
 
 **Regional Manager, Channel & Enterprise Sales (LATAM)** @ Collibra *(2018 - 2021)*
 - Led data intelligence solution sales generating $2.4M+ revenue
@@ -344,4 +360,4 @@ Intelligent LLM routing system that classifies query complexity and routes accor
 
 **💡 Open to collaboration on ML/AI projects and full-time opportunities!**
 
-*Last updated: May 2026*
+*Last updated: June 2026*
