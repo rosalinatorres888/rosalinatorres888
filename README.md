@@ -13,7 +13,7 @@ Specializing in ML/AI systems, agentic architectures, and production data pipeli
 ## 🎯 Featured Projects
 
 ### 📈 ROSE ALPHA — AI Investment Dashboard
-> **Single-file · 11-tab · live market intelligence terminal** | Claude API + Finnhub + Tavily
+> **Single-file · 11-tab · live market intelligence terminal** | Claude API + Finnhub + Tavily · [**🔴 Live Demo**](https://rosalinatorres888.github.io/rose-alpha-dashboard/)
 
 A personal AI-powered trading dashboard built around two analyst personas. **Obama** runs agentic market research with live tool use (web search, price feeds, hypothesis testing, scenario modeling). **Trump** predicts chaos event impacts on the portfolio. No build step — just `index.html`.
 
