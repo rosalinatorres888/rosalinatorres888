@@ -129,6 +129,7 @@ flowchart TB
 | 💸 **Multi-Agent LLM Router** | **90% inference cost reduction** | Python, local-first LLMs, complexity-based routing | Active |
 | 📊 **LinkedIn Brand Analyzer** | NLP + Network Analysis | SpaCy, NetworkX, PyVis | Active |
 | 📈 **ROSE ALPHA Dashboard** | **11 tabs · live AI analyst · regime detection** · single HTML file | Vanilla JS, Claude API, Finnhub, Tavily | Active |
+| 📐 **Quant Analytics** | **Realized risk library · companion to ROSE ALPHA** · tested Python package | Python, yfinance, NumPy, pytest | Active |
 
 ---
 
@@ -144,6 +145,19 @@ A personal AI-powered trading dashboard built around two analyst personas. **Oba
 **Tech:** Vanilla JS/HTML/CSS · Claude API (direct browser) · Finnhub · Tavily · localStorage persistence
 
 [View Project](https://github.com/rosalinatorres888/rose-alpha-dashboard)
+
+---
+
+### 📐 Quant Analytics — Risk & Factor Library
+> **Tested Python library · companion to ROSE ALPHA** | Realized risk metrics across 11-asset universe
+
+A production-quality Python package for realized risk and factor analysis across AAPL, NVDA, MSFT, TSLA, GOOGL, SPY, QQQ, VTI, BTC, ETH, and SOL. The methodology behind the Risk tab in ROSE ALPHA — signal generation lives in the dashboard; the math lives here, with full pytest coverage and no network calls in tests.
+
+**Modules:** `volatility` (21d/63d realized vol, VIX context) · `correlation` (rolling Pearson matrix) · `drawdown` (max drawdown, underwater curves) · `factors` (beta to SPY, growth/value tilt, HHI concentration)
+
+**Tech:** Python 3.10+, yfinance, CoinGecko, NumPy, pandas, pytest, Jupyter
+
+[View Project](https://github.com/rosalinatorres888/quant-analytics)
 
 ---
 
