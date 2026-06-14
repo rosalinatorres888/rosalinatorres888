@@ -128,10 +128,24 @@ flowchart TB
 | 🤗 **MENTOR (Mistral-7B)** | **Fine-tuned bilingual EN/ES tutor** · published on Hugging Face | Mistral-7B, PBL pedagogy, fine-tuning | Published |
 | 💸 **Multi-Agent LLM Router** | **90% inference cost reduction** | Python, local-first LLMs, complexity-based routing | Active |
 | 📊 **LinkedIn Brand Analyzer** | NLP + Network Analysis | SpaCy, NetworkX, PyVis | Active |
+| 📈 **ROSE ALPHA Dashboard** | **11 tabs · live AI analyst · regime detection** · single HTML file | Vanilla JS, Claude API, Finnhub, Tavily | Active |
 
 ---
 
 ## 🎯 Featured Projects
+
+### 📈 ROSE ALPHA — AI Investment Dashboard
+> **Single-file · 11-tab · live market intelligence terminal** | Claude API + Finnhub + Tavily
+
+A personal AI-powered trading dashboard built around two analyst personas. **Obama** runs agentic market research with live tool use (web search, price feeds, hypothesis testing, scenario modeling). **Trump** predicts chaos event impacts on the portfolio. No build step — just `index.html`.
+
+**Key features:** Macro Regime Detection (classifies Risk-On/Off/Stagflation/Goldilocks every 6h) · Conviction Journal (every AI signal auto-scored vs real price at 7d/30d) · Portfolio Stress Replay (6 historical crashes) · Earnings Watch · Correlation Alerts · Natural Language Trade Journal with bias audit
+
+**Tech:** Vanilla JS/HTML/CSS · Claude API (direct browser) · Finnhub · Tavily · localStorage persistence
+
+[View Project](https://github.com/rosalinatorres888/rose-alpha-dashboard)
+
+---
 
 ### 🏆 Career Intelligence System
 > **92.3% semantic matching accuracy** | Built ground-up: database architecture → semantic layer → UI
