@@ -143,7 +143,7 @@ Every number traces to a committed results file in the linked repo.
 
 Four repos where the committed outputs are the point, negative results included.
 
-| Study | The finding | |
+| Study | The finding | Links |
 |---|---|---|
 | **Cross-entropy vs MSE** | Pure-NumPy loss study. MSE out-calibrated cross-entropy on ECE (0.132 vs 0.180) — but CE escaped 10/10 confidently-wrong predictions that MSE stayed stuck on | [Code](https://github.com/rosalinatorres888/cross-entropy-vs-mse) · [Write-up](https://rosalinalabs.com/writing/the-mistake-my-network-refused-to-fix) |
 | **Word2Vec grid search** | 27 runs against a GloVe baseline. My embeddings hit 10% where GloVe hit 63%. That gap is the result | [Code](https://github.com/rosalinatorres888/word2vec-grid-search) · [Write-up](https://rosalinalabs.com/writing/my-model-never-learned-the-word-athens) |
