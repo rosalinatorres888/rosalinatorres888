@@ -5,7 +5,6 @@
 <p align="center">
   <a href="https://rosalinalabs.com"><img src="https://img.shields.io/badge/Portfolio-rosalinalabs.com-0B7285?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"></a>
   <a href="https://linkedin.com/in/rosalina-torres"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://huggingface.co/spanishrose"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-FFD21E?style=for-the-badge&logoColor=black" alt="Hugging Face"></a>
   <a href="mailto:torres.ros@northeastern.edu"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
@@ -42,7 +41,7 @@ flowchart LR
   B -->|"ChromaDB + Tavily<br/>credibility rerank"| V
   C -->|"found 26.7%<br/>split contamination"| V
   C -->|"13 defects root-caused<br/>leakage-free re-split"| Q["CoSQL NBA<br/>conversational text-to-SQL"]
-  D -->|"Airflow, dbt contracts<br/>MCP agent state"| R["ARIA and pipelines<br/>agentic career system"]
+  D -->|"contracts, telemetry<br/>evidence-tiered memory"| R["ROSE OS<br/>governed agent runtime"]
 
   V --> E["Published evidence<br/>results committed<br/>corrections included"]
   Q --> E
@@ -109,17 +108,17 @@ Thirteen defects root-caused along the way. My favorite: `nba_api` stored shot c
 
 ---
 
-### ARIA + Career Intelligence System — agentic pipeline, built ground-up
+### ROSE OS — agent runtime with a governed memory core
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-D97757)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-D97757) ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?logo=neo4j&logoColor=white) ![Private](https://img.shields.io/badge/repo-private_·_walkthrough_on_request-6b7280)
 
-CIS is the platform layer: MySQL conceptual and physical database design, MongoDB for extended candidate data, SQLite for coordination, a sentence-transformer matching pipeline, and a Streamlit interface. I designed and built every layer.
+The production system behind the Reliability Lab's Governance Console and Memory Visualizer. A multi-agent runtime where every agent has a declared contract: a registry, explicit capability grants, and missions that stop at an approval gate rather than executing straight through.
 
-ARIA is the autonomous layer on top — monitoring job boards, matching against the CIS knowledge base, generating tailored outreach, and holding state across runs through MCP servers.
+Underneath it is the **Memory Core** — a knowledge graph where every fact carries an evidence tier (`candidate` → `validated` → `canonical`) and a provenance edge back to the artifact that justifies it. Agents can read canonical facts; promoting a claim to canonical requires the evidence to exist. That constraint is the entire point: it makes "the agent made it up" a structurally detectable state rather than something you notice later.
 
-No accuracy number here on purpose. Formal benchmarking against labeled matches is on the roadmap; until that exists, there's nothing to cite.
+Guardrails are enforced, not documented — tool-use enforcement is regression-tested, memory writes are attributed to the runner that made them, and failures are loud by design.
 
-[**ARIA**](https://github.com/rosalinatorres888/aria-career-assistant) · [**CIS**](https://github.com/rosalinatorres888/career-intelligence-system)
+The repo is **private**: it coordinates live personal agents and holds real career and contact data. Architecture walkthrough and a demo of the Memory Core graph available on request.
 
 ---
 
@@ -130,7 +129,7 @@ Every number traces to a committed results file in the linked repo.
 | Project | What the evidence shows | Link |
 |---|---|---|
 | **Slack behavioral segmentation** | Unsupervised segmentation of a graduate learning community (n=116, 162 channel-months): PCA → K-Means, silhouette-selected k=6, t-SNE projection. Six archetypes, presented at Northeastern's Cutting EDGE conference. Ships the pipeline and a synthetic-data demo — and no real data, by design: `DATA.md` documents the consent and FERPA reasoning | [Code](https://github.com/rosalinatorres888/slack-behavioral-segmentation) |
-| **aria-dbt** | Analytics warehouse with data contracts — 46/46 layered dbt tests passing in CI: source contracts, referential integrity, range and invariant checks | [Code](https://github.com/rosalinatorres888/aria-dbt) |
+| **aria-dbt** | Analytics warehouse with data contracts — staging/marts layering, dimensional modeling (fact + conformed dimension + analytics mart), 46/46 schema tests passing in CI. DuckDB-portable to Snowflake | [Code](https://github.com/rosalinatorres888/aria-dbt) |
 | **hn-etl-pipeline** | Dockerized Airflow producing Hive-partitioned NDJSON on S3-compatible storage (LocalStack), with a Glue/Athena query layer. 9 verified DAG runs, 12-case pytest suite | [Code](https://github.com/rosalinatorres888/hn-etl-pipeline) |
 | **Democracy clustering** | 167 countries on the EIU Democracy Index — K-means and hierarchical, silhouette model selection, bootstrap stability ARI 0.583 ± 0.091 | [Code](https://github.com/rosalinatorres888/democracy-clustering-analysis) · [Write-up](https://rosalinalabs.com/writing/democracy-in-data) |
 | **Human activity entropy** | Information-theoretic behavioral classification: permutation entropy and statistical complexity features over noisy multi-channel sensor data. 87.8% test accuracy — reported alongside 68.3% cross-validation and 27.5% cross-dataset generalization, because the third number is the one that matters | [Live dashboard](https://rosalinatorres888.github.io/har-3d-analytics-dashboard/) |
@@ -155,9 +154,8 @@ Four repos where the committed outputs are the point, negative results included.
 |---|---|---|---|
 | 📈 [**ROSE ALPHA**](https://github.com/rosalinatorres888/rose-alpha-dashboard) | 11-tab market intelligence terminal in a single HTML file. Macro regime detection, a conviction journal that auto-scores every AI signal against real price at 7d/30d, portfolio stress replay across 6 historical crashes | Vanilla JS, Claude API, Finnhub, Tavily | [Live](https://rosalinatorres888.github.io/rose-alpha-dashboard/) |
 | 📐 [**Quant Analytics**](https://github.com/rosalinatorres888/quant-analytics) | The math behind ROSE ALPHA's risk tab, as a tested package: realized vol, rolling correlation, drawdown, factor tilt across an 11-asset universe. No network calls in tests | Python, NumPy, pandas, pytest | Active |
-| 🤗 [**MENTOR**](https://huggingface.co/spanishrose/mentor-mistral-7b-pbl) | Fine-tuned Mistral-7B tutor for project-based learning — teaches by asking, not lecturing. Bilingual EN/ES. A side build, not part of the research line | Mistral-7B, instruction tuning | Published |
 | 📊 [**LinkedIn Brand Analyzer**](https://github.com/rosalinatorres888/linkedin-brand-analyzer) | Engagement analysis with SpaCy + VADER sentiment and NetworkX graph clustering | SpaCy, NetworkX, BERTopic, Streamlit | Active |
-| 🧠 **Memory Brain** | Shared SQLite coordination layer across my agents, with MCP servers bridging MySQL, MongoDB, and filesystem resources. Private — it coordinates live personal agents. Architecture write-up on request | SQLite, MCP, Ollama | Private |
+| 🗂️ [**Career Intelligence System**](https://github.com/rosalinatorres888/career-intelligence-system) | Semantic job-to-candidate matching, built ground-up: MySQL conceptual and physical design, MongoDB for extended profiles, a sentence-transformer matching pipeline, Streamlit UI. No accuracy figure on purpose — benchmarking against labeled matches does not exist yet | MySQL, MongoDB, Sentence Transformers | Active |
 | 🗓️ [**Critical-path planner**](https://critical-path-planner.netlify.app) | CPM with forward/backward pass and float computation | JS | Live |
 
 ---
