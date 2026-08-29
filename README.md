@@ -56,6 +56,29 @@ flowchart LR
 
 ---
 
+## 🔬 Reliability Lab — [rosalinalabs.com/lab](https://rosalinalabs.com/lab)
+
+<p align="center">
+  <a href="https://rosalinalabs.com/lab"><img src="https://img.shields.io/badge/▶_Launch_the_Reliability_Lab-0B7285?style=for-the-badge&logoColor=white" alt="Launch the Reliability Lab"></a>
+  <img src="https://img.shields.io/badge/7_instruments-online-22c55e?style=for-the-badge" alt="7 instruments online">
+  <img src="https://img.shields.io/badge/no_signup-interactive-6f42c1?style=for-the-badge" alt="Interactive">
+</p>
+
+The argument I keep making in writing is that reliability is a chain, not a score. The Lab is that argument you can click on: seven instruments, each isolating **one** condition of a reliable AI system so you can change it and watch what breaks.
+
+Start with the **Evidence Inspector** — it opens on a claim the model is 92% confident about, with 0% evidence coverage. That gap is the whole thesis.
+
+| # | Instrument | What it isolates |
+|---|---|---|
+| 01 | **Evidence Inspector** | Can every important claim be traced to a trustworthy source? |
+| 02 | **Hallucination Simulator** | Remove grounding and watch confident errors emerge |
+| 03 | **Retrieval Explorer** | How information gets found, ranked, and actually used |
+| 04 | **Memory Visualizer** | What the system remembers, what it forgets, and why that matters |
+| 05 | **Governance Console** | Policy testing — how risky requests get intercepted |
+| 06 | **Evaluation Bench** | Measuring across dimensions, because accuracy is not enough |
+| 07 | **Human Review Station** | Review, annotate, and improve an AI-generated answer |
+
+
 ## Anchor projects
 
 ### VerifAI — bilingual (EN/ES) misinformation classifier + RAG fact-checker
@@ -144,8 +167,6 @@ Four repos where the committed outputs are the point, negative results included.
 I write about my own failure modes, at [**rosalinalabs.com/writing**](https://rosalinalabs.com/writing).
 
 [The Accuracy Score That Lied to Me](https://rosalinalabs.com/writing/the-accuracy-score-that-lied-to-me) · [VerifAI: Teaching AI to Check Its Sources](https://rosalinalabs.com/writing/verifai-teaching-ai-to-check-its-sources) · [My Model Never Learned the Word "Athens"](https://rosalinalabs.com/writing/my-model-never-learned-the-word-athens) · [When AI Learns to Doubt Itself, Medicine Gets Safer](https://rosalinalabs.com/writing/when-ai-learns-to-doubt-itself-medicine-gets-safer)
-
-There's also an interactive [**Reliability Lab**](https://rosalinalabs.com/lab) — evidence inspector, hallucination simulator, evaluation bench, and governance console, built to make the reliability chain something you can poke at rather than read about.
 
 ---
 
