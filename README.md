@@ -1,253 +1,214 @@
-[![Header Banner](images/github-banner-new.svg)](images/github-banner-new.svg)
+<h1 align="center">Rosalina Torres</h1>
 
-# Hi, I'm Rosalina Torres 👋
+<p align="center"><b>AI &amp; Machine Learning Engineer</b> · trustworthy ML systems, evaluation, and agentic architectures</p>
 
-MS Data Analytics Engineering @ Northeastern University · completed August 2026 · 3.7 GPA
+<p align="center">
+  <a href="https://rosalinalabs.com"><img src="https://img.shields.io/badge/Portfolio-rosalinalabs.com-0B7285?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"></a>
+  <a href="https://linkedin.com/in/rosalina-torres"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://huggingface.co/spanishrose"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-FFD21E?style=for-the-badge&logoColor=black" alt="Hugging Face"></a>
+  <a href="mailto:torres.ros@northeastern.edu"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
 
-Specializing in ML/AI systems, agentic architectures, and production data pipelines. Building intelligent, scalable systems that solve real problems — from databases to deployment.
-
-The through-line in my work: every metric I publish links to a committed artifact, and when a number turns out to be wrong, the correction gets published too.
-
-> **Available now** · Open to relocation · Remote-friendly · Authorized to work in the US
-
----
-
-## 🎯 Featured Projects
-
-### 📈 ROSE ALPHA — AI Investment Dashboard
-> **Single-file · 11-tab · live market intelligence terminal** | Claude API + Finnhub + Tavily · [**🔴 Live Demo**](https://rosalinatorres888.github.io/rose-alpha-dashboard/)
-
-A personal AI-powered trading dashboard built around two analyst personas. **Obama** runs agentic market research with live tool use (web search, price feeds, hypothesis testing, scenario modeling). **Trump** predicts chaos event impacts on the portfolio. No build step — just `index.html`.
-
-**Key features:** Macro Regime Detection (classifies Risk-On/Off/Stagflation/Goldilocks every 6h) · Conviction Journal (every AI signal auto-scored vs real price at 7d/30d) · Portfolio Stress Replay (6 historical crashes) · Earnings Watch · Correlation Alerts · Natural Language Trade Journal with bias audit
-
-**Tech:** Vanilla JS/HTML/CSS · Claude API (direct browser) · Finnhub · Tavily · localStorage persistence
-
-[View Project](https://github.com/rosalinatorres888/rose-alpha-dashboard)
+<p align="center">
+  <img src="https://img.shields.io/badge/M.S._Data_Analytics_Engineering-Northeastern_·_GPA_3.78-C8102E?style=flat-square" alt="MS DAE">
+  <img src="https://img.shields.io/badge/Status-Degree_completed_Aug_2026-22c55e?style=flat-square" alt="Completed">
+  <img src="https://img.shields.io/badge/Location-Greater_Boston_·_relocation_OK-1f2937?style=flat-square" alt="Location">
+  <img src="https://img.shields.io/badge/Languages-English_%2F_Spanish-6f42c1?style=flat-square" alt="Bilingual">
+  <img src="https://img.shields.io/badge/Work_authorization-US-0369a1?style=flat-square" alt="Work auth">
+</p>
 
 ---
 
-### 📐 Quant Analytics — Risk & Factor Library
-> **Tested Python library · companion to ROSE ALPHA** | Realized risk metrics across 11-asset universe
+I build ML systems and then try to break them in public. Every metric below links to a committed artifact in the repo that produced it. When a number turns out to be wrong — contaminated splits, a leaky evaluation, an accuracy score measuring the wrong thing — the correction gets published next to the original, and the old checkpoint stays in the repo so the comparison is auditable.
 
-A production-quality Python package for realized risk and factor analysis across AAPL, NVDA, MSFT, TSLA, GOOGL, SPY, QQQ, VTI, BTC, ETH, and SOL. The methodology behind the Risk tab in ROSE ALPHA — signal generation lives in the dashboard; the math lives here, with full pytest coverage and no network calls in tests.
+Twelve years in enterprise data, governance, and cloud before this. That's why I care more about whether a number survives contact with production than whether it looks good on a slide.
 
-**Modules:** `volatility` (21d/63d realized vol, VIX context) · `correlation` (rolling Pearson matrix) · `drawdown` (max drawdown, underwater curves) · `factors` (beta to SPY, growth/value tilt, HHI concentration)
-
-**Tech:** Python 3.10+, yfinance, CoinGecko, NumPy, pandas, pytest, Jupyter
-
-[View Project](https://github.com/rosalinatorres888/quant-analytics)
+**Open to ML/AI Engineer, Research Engineer, and Forward-Deployed AI Engineer roles.**
 
 ---
 
-### 🤗 MENTOR — Fine-Tuned Mistral-7B Teaching Assistant
-> Bilingual (EN/ES) project-based learning tutor · published on Hugging Face
+## How the work connects
 
-A fine-tuned Mistral-7B model designed for project-based learning pedagogy: teaches by asking, not lecturing. Responds in both English and Spanish. Built around the principle that the best teachers help learners discover answers themselves.
+```mermaid
+flowchart LR
+  subgraph SKILLS["Core skills"]
+    A["Transformers<br/>from scratch"]
+    B["RAG and retrieval<br/>engineering"]
+    C["Evaluation and<br/>error analysis"]
+    D["Data and agent<br/>infrastructure"]
+  end
 
-**Tech:** Mistral-7B, fine-tuning, PBL pedagogy, bilingual instruction tuning
+  A -->|"6.3M-param encoder<br/>custom 16K BPE"| V["VerifAI<br/>bilingual fact-checker"]
+  B -->|"ChromaDB + Tavily<br/>credibility rerank"| V
+  C -->|"found 26.7%<br/>split contamination"| V
+  C -->|"13 defects root-caused<br/>leakage-free re-split"| Q["CoSQL NBA<br/>conversational text-to-SQL"]
+  D -->|"Airflow, dbt contracts<br/>MCP agent state"| R["ARIA and pipelines<br/>agentic career system"]
 
-[View on Hugging Face](https://huggingface.co/spanishrose/mentor-mistral-7b-pbl)
+  V --> E["Published evidence<br/>results committed<br/>corrections included"]
+  Q --> E
+  R --> E
 
----
-
-### 🏆 Career Intelligence System
-> Semantic job–candidate matching · built ground-up: database architecture → semantic layer → UI
-
-An intelligent career management platform that matches job opportunities to candidate profiles using NLP and semantic similarity. I designed and built every layer: MySQL conceptual + physical database design, MongoDB for extended candidate data, SQLite for coordination, the sentence-transformer matching pipeline, and the Streamlit interface. Features automated resume tailoring, cover letter generation, and application tracking. Formal accuracy benchmarking against labeled matches is on the roadmap — until then, no number.
-
-**Tech:** Python, MySQL (architecture + conceptual design), MongoDB, SQLite, Sentence Transformers, Streamlit, MCP Integration
-
-[View Project](https://github.com/rosalinatorres888/career-intelligence-system)
-
----
-
-### 🧠 Memory Brain: Multi-Agent Coordination
-> **848+ records** | **21 autonomous agents** | Central orchestration layer · private system
-
-A unified coordination system that connects all my AI agents through a shared SQLite database. Implements Model Context Protocol (MCP) servers for seamless Claude integration across MySQL, MongoDB, and filesystem resources. The repository is private (it coordinates live personal agents) — architecture write-up available on request.
-
-**Tech:** Python, SQLite, MCP Protocol, Ollama, Local LLMs
+  style V fill:#0B7285,stroke:#083344,color:#ffffff
+  style Q fill:#0B7285,stroke:#083344,color:#ffffff
+  style R fill:#0B7285,stroke:#083344,color:#ffffff
+  style E fill:#166534,stroke:#052e16,color:#ffffff
+```
 
 ---
 
-### 📊 LinkedIn Brand Analyzer
-> NLP-powered brand sentiment & network analysis
+## Anchor projects
 
-Analyzes LinkedIn engagement patterns using NLP (SpaCy, VADER) for sentiment analysis and NetworkX for graph-based network clustering. Identifies which content topics drive high-value engagement from recruiters and industry connections.
+### VerifAI — bilingual (EN/ES) misinformation classifier + RAG fact-checker
 
-**Tech:** Python, SpaCy, NetworkX, PyVis, BERTopic, Streamlit
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white) ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?logoColor=white) ![Params](https://img.shields.io/badge/encoder-6.3M_params_from_scratch-6f42c1) ![RAGAS](https://img.shields.io/badge/RAGAS_faithfulness-0.776-22c55e)
 
-[View Project](https://github.com/rosalinatorres888/linkedin-brand-analyzer)
+A transformer encoder and a 16K BPE tokenizer built from scratch — no pretrained weights — with English/Spanish language-ID embeddings, trained on a 37.6K-claim corpus. The RAG layer does language detection, ChromaDB retrieval with a Tavily web fallback, and a credibility-weighted rerank before it returns a grounded verdict in the input language.
 
----
+The part I'd actually want to talk about in an interview: late in the project I audited my own splits and found **26.7% train/test overlap**. Fixing it dropped test macro-F1 from **0.3647 to 0.3313** — the leak had been inflating my headline number by 10.1%. I rebuilt the splits, republished the lower number, and kept the contaminated checkpoint in the repo so both runs stay comparable. RAGAS faithfulness came in at 0.776 against a 0.75 threshold committed in code *before* the run.
 
-### 🤖 ARIA — Autonomous Career Assistant
-> Multi-agent autonomous workflow built on top of the Career Intelligence System
+The Spanish side is the honest weak spot and I say so in the repo: 991 Spanish training rows against 36,617 English. Same claim, same meaning, 72% confidence in English and 57% in Spanish.
 
-Where CIS provides the foundational data + semantic-matching platform, ARIA adds the autonomous agent layer: continuously monitoring job boards, matching opportunities against the CIS knowledge base, generating tailored outreach, and triggering notifications without human intervention. Integrates with Memory Brain for coordinated state across runs.
-
-**Tech:** Python, Memory Brain coordination, Job APIs, Email Automation, agent orchestration
-
-[View Project](https://github.com/rosalinatorres888/aria-career-assistant)
+[**Repo**](https://github.com/rosalinatorres888/verif-ai) · [**Write-up**](https://rosalinalabs.com/writing/verifai-teaching-ai-to-check-its-sources)
 
 ---
 
-### 💸 Multi-Agent LLM Router
-> Local-first, complexity-based routing · design prototype
+### CoSQL NBA — conversational text-to-SQL over spatial data
 
-Routing system that classifies query complexity and routes accordingly: simple queries stay local (Ollama), complex queries escalate to cloud models. The design goal is cutting inference spend without sacrificing quality on hard tasks; measured cost benchmarks are pending, so no savings number is claimed here yet.
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![Claude](https://img.shields.io/badge/Claude_Opus-D97757?logo=anthropic&logoColor=white) ![Exec acc](https://img.shields.io/badge/execution_accuracy-88.5%25_leakage--free-22c55e) ![Corpus](https://img.shields.io/badge/WOZ_corpus-139_pairs_·_κ_98.6%25-10b981)
 
-**Tech:** Python, local-first LLMs (Ollama), complexity classification, fallback architecture
+Multi-turn basketball questions in plain English resolved into executable PostgreSQL, carrying coreference across turns ("what about only *his* made shots?"). I authored the 139-pair Wizard-of-Oz annotation corpus (99.3% execution rate, dual-auditor QA, Cohen's κ 98.6%) and built the few-shot NL2SQL pipeline.
 
-[View Project](https://github.com/rosalinatorres888/multi-agent-llm-router)
+**88.5% execution accuracy** on a conversation-level, leakage-free held-out split. I report the strict cross-schema number too — **31.8%** — because that gap is the finding, not a blemish. An earlier version of this project reported a much higher figure that turned out to be SQL *validity*, not execution accuracy; the correction is public in the repo.
 
----
+Thirteen defects root-caused along the way. My favorite: `nba_api` stored shot coordinates in tenths-of-feet and shot distance in whole feet, in the same table, undocumented. Every zone query silently returned zero rows.
 
-## 🔬 Research & Evaluation Work
-
-Every number below traces to a committed results file in the linked repo.
-
-| Project | What the evidence shows | Links |
-|---------|------------------------|-------|
-| **VerifAI** — bilingual (EN/ES) fact-checking system | From-scratch 6.3M-parameter transformer + RAG pipeline. Found and publicly corrected 26.7% test-set contamination in my own benchmark (macro-F1 0.365 → 0.331); RAGAS faithfulness 0.776 against a 0.75 target pre-committed in code | [Code](https://github.com/rosalinatorres888/verif-ai) · [Write-up](https://rosalina.sites.northeastern.edu/2026/07/03/verifai/) |
-| **Boston Celtics CoSQL** — conversational text-to-SQL (IE7500 group project) | Authored the 139-pair annotated corpus (99.3% execution rate, dual-auditor QA) and the few-shot NL2SQL pipeline: 88.5% execution accuracy on a leakage-free held-out set, strict cross-schema stress tests (31.8%), and a public correction of an earlier validity-only figure | [Group repo](https://github.com/rosalinatorres888/cosql-nba-spatial) · [My pipeline](https://github.com/rosalinatorres888/nba-cosql-spatial-pipeline) |
-| **Slack behavioral segmentation** — research methods release | Unsupervised segmentation of an online graduate learning community (n=116): PCA → K-Means, silhouette-selected k=6. Ships the full pipeline plus a synthetic-data demo — and no data, by design: DATA.md documents the consent, program-data, and FERPA reasoning | [Code](https://github.com/rosalinatorres888/slack-behavioral-segmentation) |
-| **aria-dbt** — analytics warehouse with data contracts | 46/46 layered dbt tests passing in CI: source contracts, referential integrity, range and invariant checks | [Code](https://github.com/rosalinatorres888/aria-dbt) |
-| **hn-etl-pipeline** — orchestrated ETL | Dockerized Airflow producing Hive-partitioned NDJSON on S3-compatible storage (LocalStack), with a Glue/Athena query layer. 9 verified DAG runs and a 12-case pytest suite | [Code](https://github.com/rosalinatorres888/hn-etl-pipeline) |
-| **Democracy clustering** — unsupervised analysis | 167 countries on the EIU Democracy Index: K-means and hierarchical methods, silhouette model selection, bootstrap stability ARI 0.583 ± 0.091 | [Code](https://github.com/rosalinatorres888/democracy-clustering-analysis) |
-
-**Honest-experiments series** — four repos where the committed outputs are the point, negative results included: [cross-entropy-vs-mse](https://github.com/rosalinatorres888/cross-entropy-vs-mse) (MSE out-calibrated cross-entropy on ECE, 0.132 vs 0.180 — but CE escaped 10/10 confidently-wrong predictions), [word2vec-grid-search](https://github.com/rosalinatorres888/word2vec-grid-search) (my embeddings hit 10% where GloVe hit 63%; that gap is the finding), [nlp-failure-modes](https://github.com/rosalinatorres888/nlp-failure-modes), [gradient-descent-experiments](https://github.com/rosalinatorres888/gradient-descent-experiments)
-
-**Live tools:** [Critical-path planner](https://critical-path-planner.netlify.app) — CPM with forward/backward pass and float · [HAR analytics dashboard](https://rosalinatorres888.github.io/har-3d-analytics-dashboard/) — entropy-based movement analysis in Three.js/D3
-
-**More repos:** [crypto-ml-pipeline](https://github.com/rosalinatorres888/crypto-ml-pipeline) (CoinGecko ETL + Random Forest baseline) · [Advanced_Network_Intelligence](https://github.com/rosalinatorres888/Advanced_Network_Intelligence) (graph analysis)
+[**My pipeline**](https://github.com/rosalinatorres888/nba-cosql-spatial-pipeline) · [**Group repo (3 architectures compared)**](https://github.com/rosalinatorres888/cosql-nba-spatial) · [**Live annotation tool**](https://nba-cosql-spatial-annotation-tool.netlify.app/)
 
 ---
 
-## ✍️ Writing
+### ARIA + Career Intelligence System — agentic pipeline, built ground-up
 
-I write about my own failure modes: [The Accuracy Score That Lied to Me](https://rosalina.sites.northeastern.edu/the-accuracy-score-that-lied-to-me/) · [My Model Never Learned the Word "Athens"](https://rosalina.sites.northeastern.edu/my-model-never-learned-the-word-athens/) · [more on the blog](https://rosalina.sites.northeastern.edu)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-D97757)
 
----
+CIS is the platform layer: MySQL conceptual and physical database design, MongoDB for extended candidate data, SQLite for coordination, a sentence-transformer matching pipeline, and a Streamlit interface. I designed and built every layer.
 
-## ⭐ Flagship Systems at a Glance
+ARIA is the autonomous layer on top — monitoring job boards, matching against the CIS knowledge base, generating tailored outreach, and holding state across runs through MCP servers.
 
-| System | Highlight | Tech Stack | Status |
-|--------|-----------|------------|--------|
-| 📈 **ROSE ALPHA Dashboard** | **11 tabs · live AI analyst · regime detection** · single HTML file | Vanilla JS, Claude API, Finnhub, Tavily | Active |
-| 📐 **Quant Analytics** | **Realized risk library · companion to ROSE ALPHA** · tested Python package | Python, yfinance, NumPy, pytest | Active |
-| 🤗 **MENTOR (Mistral-7B)** | **Fine-tuned bilingual EN/ES tutor** · published on Hugging Face | Mistral-7B, PBL pedagogy, fine-tuning | Published |
-| ✨ **Career Intelligence System** | **Semantic matching platform** · built ground-up | MySQL, MongoDB, SQLite, Sentence Transformers, Streamlit | Active |
-| 🤖 **ARIA** | **Autonomous multi-agent workflow** built on CIS | Python, Memory Brain, Job APIs, Email Automation | Active |
-| 🧠 **Memory Brain** | **848+ records, 21 agents** · private system | SQLite, MCP Protocol, Ollama | Active |
-| 💸 **Multi-Agent LLM Router** | **Local-first routing** · design prototype | Python, local-first LLMs, complexity-based routing | Prototype |
-| 📊 **LinkedIn Brand Analyzer** | NLP + Network Analysis | SpaCy, NetworkX, PyVis | Active |
+No accuracy number here on purpose. Formal benchmarking against labeled matches is on the roadmap; until that exists, there's nothing to cite.
+
+[**ARIA**](https://github.com/rosalinatorres888/aria-career-assistant) · [**CIS**](https://github.com/rosalinatorres888/career-intelligence-system)
 
 ---
 
-## 🚀 Currently
+## Evidence table
 
-- 🎓 M.S. Data Analytics Engineering @ Northeastern — completed August 2026 (GPA 3.7)
-- 📝 Graduate Student Ambassador, College of Engineering
-- 🤖 Autonomous AI agents with Memory Brain coordination
-- 🔌 MCP servers for AI-database integration
+Every number traces to a committed results file in the linked repo.
 
----
+| Project | What the evidence shows | Link |
+|---|---|---|
+| **Slack behavioral segmentation** | Unsupervised segmentation of a graduate learning community (n=116, 162 channel-months): PCA → K-Means, silhouette-selected k=6, t-SNE projection. Six archetypes, presented at Northeastern's Cutting EDGE conference. Ships the pipeline and a synthetic-data demo — and no real data, by design: `DATA.md` documents the consent and FERPA reasoning | [Code](https://github.com/rosalinatorres888/slack-behavioral-segmentation) |
+| **aria-dbt** | Analytics warehouse with data contracts — 46/46 layered dbt tests passing in CI: source contracts, referential integrity, range and invariant checks | [Code](https://github.com/rosalinatorres888/aria-dbt) |
+| **hn-etl-pipeline** | Dockerized Airflow producing Hive-partitioned NDJSON on S3-compatible storage (LocalStack), with a Glue/Athena query layer. 9 verified DAG runs, 12-case pytest suite | [Code](https://github.com/rosalinatorres888/hn-etl-pipeline) |
+| **Democracy clustering** | 167 countries on the EIU Democracy Index — K-means and hierarchical, silhouette model selection, bootstrap stability ARI 0.583 ± 0.091 | [Code](https://github.com/rosalinatorres888/democracy-clustering-analysis) · [Write-up](https://rosalinalabs.com/writing/democracy-in-data) |
+| **Human activity entropy** | Information-theoretic behavioral classification: permutation entropy and statistical complexity features over noisy multi-channel sensor data. 87.8% test accuracy — reported alongside 68.3% cross-validation and 27.5% cross-dataset generalization, because the third number is the one that matters | [Live dashboard](https://rosalinatorres888.github.io/har-3d-analytics-dashboard/) |
+| **Multi-model router** | Claude, ChatGPT, Gemini and Perplexity treated as stateless specialists behind a Neo4j graph trace ledger — memory lives in the system, not the models. 15 tests | [Code](https://github.com/rosalinatorres888/multi-model-router) |
 
-**💼 Open to ML/AI Engineering roles · Available immediately · Open to relocation · Remote-friendly · Authorized to work in the US**
+### Honest-experiments series
 
----
+Four repos where the committed outputs are the point, negative results included.
 
-## 🛠️ Tech Stack
-
-### Languages & Frameworks
-![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=postgresql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-### ML/AI Frameworks
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Scikit Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-
-### Data & Pipelines
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
-![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-
-### Cloud & Deployment
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+| Study | The finding | |
+|---|---|---|
+| **Cross-entropy vs MSE** | Pure-NumPy loss study. MSE out-calibrated cross-entropy on ECE (0.132 vs 0.180) — but CE escaped 10/10 confidently-wrong predictions that MSE stayed stuck on | [Code](https://github.com/rosalinatorres888/cross-entropy-vs-mse) · [Write-up](https://rosalinalabs.com/writing/the-mistake-my-network-refused-to-fix) |
+| **Word2Vec grid search** | 27 runs against a GloVe baseline. My embeddings hit 10% where GloVe hit 63%. That gap is the result | [Code](https://github.com/rosalinatorres888/word2vec-grid-search) · [Write-up](https://rosalinalabs.com/writing/my-model-never-learned-the-word-athens) |
+| **Gradient descent experiments** | SGD, momentum, and Adam failure modes — including the fast algorithm that ran 370× slower | [Code](https://github.com/rosalinatorres888/gradient-descent-experiments) · [Write-up](https://rosalinalabs.com/writing/the-fast-algorithm-that-was-370-times-slower) |
+| **NLP failure modes** | Where standard pipelines quietly break — the run where "Washington" stopped being a person | [Code](https://github.com/rosalinatorres888/nlp-failure-modes) · [Write-up](https://rosalinalabs.com/writing/when-washington-stopped-being-a-person) |
 
 ---
 
-## 📊 GitHub Stats
+## Other builds
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rosalinatorres888&show_icons=true&theme=radical&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rosalinatorres888&layout=compact&theme=radical&hide_border=true)
-
----
-
-## 💼 Experience
-
-**AI Data Trainer (Bilingual)** @ Alignerr *(2025 – present)*
-- RLHF annotation and preference ranking for frontier LLM training pipelines
-- Bilingual (EN/ES) evaluation of model outputs for factual accuracy, bias, and safety across reasoning and coding tasks
-- Human-in-the-loop feedback specialist on alignment tooling used in production model iterations
-
-**Regional Manager, Channel & Enterprise Sales (LATAM)** @ Collibra
-- Led data intelligence solution sales across LATAM enterprise accounts
-- Enterprise data governance, catalog, and AI governance frameworks
-
-**Regional Sales Manager** @ Zerto
-- Solo-owned the LATAM territory; MVP Global Salesperson of the Year
-- Cloud data protection and disaster recovery platforms
-
-**Business Development Executive** @ Oracle Corp
-- Top Gun and Fast Start awards
-- Database management, cloud infrastructure, middleware solutions
-
-*Full role dates on [LinkedIn](https://linkedin.com/in/rosalina-torres).*
+| System | What it is | Stack | Status |
+|---|---|---|---|
+| 📈 [**ROSE ALPHA**](https://github.com/rosalinatorres888/rose-alpha-dashboard) | 11-tab market intelligence terminal in a single HTML file. Macro regime detection, a conviction journal that auto-scores every AI signal against real price at 7d/30d, portfolio stress replay across 6 historical crashes | Vanilla JS, Claude API, Finnhub, Tavily | [Live](https://rosalinatorres888.github.io/rose-alpha-dashboard/) |
+| 📐 [**Quant Analytics**](https://github.com/rosalinatorres888/quant-analytics) | The math behind ROSE ALPHA's risk tab, as a tested package: realized vol, rolling correlation, drawdown, factor tilt across an 11-asset universe. No network calls in tests | Python, NumPy, pandas, pytest | Active |
+| 🤗 [**MENTOR**](https://huggingface.co/spanishrose/mentor-mistral-7b-pbl) | Fine-tuned Mistral-7B tutor for project-based learning — teaches by asking, not lecturing. Bilingual EN/ES. A side build, not part of the research line | Mistral-7B, instruction tuning | Published |
+| 📊 [**LinkedIn Brand Analyzer**](https://github.com/rosalinatorres888/linkedin-brand-analyzer) | Engagement analysis with SpaCy + VADER sentiment and NetworkX graph clustering | SpaCy, NetworkX, BERTopic, Streamlit | Active |
+| 🧠 **Memory Brain** | Shared SQLite coordination layer across my agents, with MCP servers bridging MySQL, MongoDB, and filesystem resources. Private — it coordinates live personal agents. Architecture write-up on request | SQLite, MCP, Ollama | Private |
+| 🗓️ [**Critical-path planner**](https://critical-path-planner.netlify.app) | CPM with forward/backward pass and float computation | JS | Live |
 
 ---
 
-## 🎓 Education
+## Writing
 
-**Northeastern University** | M.S. Data Analytics Engineering | Boston, MA | Completed August 2026
-- 3.7 GPA | Graduate Student Ambassador, College of Engineering
-- Focus: Machine Learning, AI Systems, Production Pipelines
+I write about my own failure modes, at [**rosalinalabs.com/writing**](https://rosalinalabs.com/writing).
 
-**Bridgewater State University** | B.S. Economics | Boston, MA
+[The Accuracy Score That Lied to Me](https://rosalinalabs.com/writing/the-accuracy-score-that-lied-to-me) · [VerifAI: Teaching AI to Check Its Sources](https://rosalinalabs.com/writing/verifai-teaching-ai-to-check-its-sources) · [My Model Never Learned the Word "Athens"](https://rosalinalabs.com/writing/my-model-never-learned-the-word-athens) · [When AI Learns to Doubt Itself, Medicine Gets Safer](https://rosalinalabs.com/writing/when-ai-learns-to-doubt-itself-medicine-gets-safer)
 
-**University of Limerick** | Study Abroad | Ireland
-- European Union Economics & Monetary Policy Analysis
+There's also an interactive [**Reliability Lab**](https://rosalinalabs.com/lab) — evidence inspector, hallucination simulator, evaluation bench, and governance console, built to make the reliability chain something you can poke at rather than read about.
 
 ---
 
-## 📜 Certifications
+## Experience
 
-- AWS Cloud Practitioner Certified
-- Google Data Analytics Professional
-- Generative AI Specialization Learning Path
+**Graduate Student Ambassador** — Northeastern University, College of Engineering (EDGE) · *Jan 2026 – present*
+Behavioral segmentation of graduate-student engagement (n=116, 162 channel-months) using PCA, K-Means, and t-SNE. Identified six archetypes and presented the resulting content and mentorship roadmap at Northeastern's Cutting EDGE conference.
+
+**Spanish AI Data Trainer** — Alignerr (by Labelbox) · *Jan 2025 – present*
+Evaluate generative-AI and LLM datasets for factual accuracy, bias, ethics, and multilingual quality. Improved multilingual output accuracy by 20%; built embedding-based networks exceeding 85% classification accuracy.
+
+**Manager, Partnership Alliances & Channel Sales — Latin America** — Collibra · *2021 – 2023*
+Directed Data Intelligence Cloud strategy for enterprise governance, metadata, lineage, privacy, and compliance. Partnered with AWS, Google Cloud, Snowflake, and Databricks while delivering double-digit year-over-year growth.
+
+**Earlier enterprise technology roles** — Zerto (HPE), Oracle, Dell EMC, TripAdvisor · *2011 – 2021*
+Cloud, disaster-recovery, data-platform, pricing, and analytics engagements. 257% of quota at Zerto, $20M+ pipeline built at Oracle, and TripAdvisor's #1 global sales manager.
+
+*Full dates on [LinkedIn](https://linkedin.com/in/rosalina-torres).*
 
 ---
 
-## 📫 Connect With Me
+## Education & credentials
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rosalina-torres)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://rosalina.sites.northeastern.edu)
-[![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-FFD21E?style=for-the-badge&logoColor=black)](https://huggingface.co/spanishrose)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:torres.ros@northeastern.edu)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rosalinatorres888)
+**M.S. Data Analytics Engineering** — Northeastern University, College of Engineering · Completed August 2026 · **GPA 3.78**
+Coursework: Machine Learning & Data Analytics · Statistical Learning for Engineering · Applied NLP in Engineering · Neural Networks & Deep Learning · Generative AI · Data Management for Analytics · Deterministic Operations Research
+
+**B.S. Economics** — Bridgewater State University, Bridgewater, MA
+Study abroad: University of Limerick, Ireland — EU economics and monetary policy
+
+**Coursework certificates:** AWS Cloud Practitioner Essentials · AWS Fundamentals: Going Cloud-Native · AWS Fundamentals: Addressing Security Risk · Google Data Analytics: Foundations
+
+**Press:** Featured by Northeastern University Online, *"Career Change: Data Analytics Engineering."* Co-presenter, Northeastern Cutting EDGE Conference, May 2026.
 
 ---
 
-**💡 Open to collaboration on ML/AI projects and full-time opportunities!**
+## Stack
 
-*Last updated: August 2026*
+**Modeling** ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black) ![XGBoost](https://img.shields.io/badge/XGBoost-337AB7?style=flat-square)
+
+**Languages** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat-square&logo=postgresql&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
+
+**Data & pipelines** ![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white) ![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apache-airflow&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+
+**Infra & serving** ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
+
+**Evaluation** — cross-validation, ablations, error analysis, calibration/ECE, RAGAS, dimensionality reduction, reproducible research
+
+---
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=rosalinatorres888&show_icons=true&theme=react&hide_border=true&count_private=true&bg_color=0D1117&title_color=0B7285&icon_color=22c55e" alt="GitHub stats" height="165">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rosalinatorres888&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=0B7285" alt="Top languages" height="165">
+</p>
+
+---
+
+<p align="center">
+  <b>Open to ML/AI Engineer, Research Engineer, and Forward-Deployed AI Engineer roles</b><br>
+  Greater Boston · open to relocation · remote-friendly · authorized to work in the US
+</p>
+
+<p align="center">
+  <a href="https://rosalinalabs.com"><img src="https://img.shields.io/badge/rosalinalabs.com-0B7285?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"></a>
+  <a href="mailto:torres.ros@northeastern.edu"><img src="https://img.shields.io/badge/torres.ros@northeastern.edu-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://linkedin.com/in/rosalina-torres"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</p>
