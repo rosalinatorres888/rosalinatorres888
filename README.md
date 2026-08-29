@@ -123,6 +123,20 @@ The runtime stays private — it holds real career and contact data. But the lay
 
 [**Evidence layer repo**](https://github.com/rosalinatorres888/rose-os-evidence-layer) · [**Interactive Memory Core demo**](https://rosalinatorres888.github.io/rose-os-evidence-layer/) — try promoting a claim with no artifact behind it; the refusal is the point
 
+### Enterprise AI Assurance Opportunity Model — Monte Carlo under documented uncertainty
+
+![Sims](https://img.shields.io/badge/simulations-10,000-0B7285) ![PERT](https://img.shields.io/badge/Beta--PERT-λ%3D4-4581C3) ![Copula](https://img.shields.io/badge/within--niche_ρ-0.5-9B8FD0) ![Repro](https://img.shields.io/badge/seed_42-byte--identical_rerun-22c55e)
+
+A decision model over 110 (niche × factor) distributions, each carrying a low/mode/high, an evidence-confidence rating, and a written justification. 10,000 simulations produce rank probabilities, pairwise dominance, tornado sensitivity, and a ranked list of which assumptions customer interviews have to break first.
+
+The reason it's here: v0.1.0 drew all 110 cells independently, which made the composite look far more precise than its inputs — SD 2.0 across a 40-point range. That precision was an artifact of the independence assumption, not of evidence. Adding a Gaussian copula (ρ=0.5) over the percentiles, leaving every marginal untouched, moved SD to **3.8** and dropped the leader's P(#1) from **68% to 50%**. I published the worse number and the ρ sweep that shows which conclusion survives: the leader holds across ρ ∈ [0, 0.75], its margin does not.
+
+Also caught in the process: an arithmetic error in the source study (a niche summing to 67 points, not the printed 77), and two silent order-dependency bugs where `argsort` over mostly-zero probabilities let declaration order pick the top assumption to validate.
+
+`python3 opportunity_model.py` regenerates every output byte-identically from seed 42.
+
+[**Repo**](https://github.com/rosalinatorres888/ai-assurance-opportunity-model)
+
 ---
 
 ## Evidence table
