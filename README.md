@@ -110,7 +110,7 @@ Thirteen defects root-caused along the way. My favorite: `nba_api` stored shot c
 
 ### ROSE OS — agent runtime with a governed memory core
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-D97757) ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?logo=neo4j&logoColor=white) ![Private](https://img.shields.io/badge/repo-private_·_walkthrough_on_request-6b7280)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-D97757) ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?logo=neo4j&logoColor=white) ![Evidence layer](https://img.shields.io/badge/evidence_layer-public_·_18_tests-22c55e) ![Demo](https://img.shields.io/badge/interactive_demo-live-0B7285)
 
 The production system behind the Reliability Lab's Governance Console and Memory Visualizer. A multi-agent runtime where every agent has a declared contract: a registry, explicit capability grants, and missions that stop at an approval gate rather than executing straight through.
 
@@ -118,7 +118,9 @@ Underneath it is the **Memory Core** — a knowledge graph where every fact carr
 
 Guardrails are enforced, not documented — tool-use enforcement is regression-tested, memory writes are attributed to the runner that made them, and failures are loud by design.
 
-The repo is **private**: it coordinates live personal agents and holds real career and contact data. Architecture walkthrough and a demo of the Memory Core graph available on request.
+The runtime stays private — it holds real career and contact data. But the layer that makes it defensible is public and runnable: **[rose-os-evidence-layer](https://github.com/rosalinatorres888/rose-os-evidence-layer)** ships the tier ladder, the provenance graph, the contract registry, and the export gate, with 18 tests that cover the *refusal* paths rather than only the happy ones. No real data — a synthetic 21-entity graph exercises every rung.
+
+[**Evidence layer repo**](https://github.com/rosalinatorres888/rose-os-evidence-layer) · [**Interactive Memory Core demo**](https://rosalinatorres888.github.io/rose-os-evidence-layer/) — try promoting a claim with no artifact behind it; the refusal is the point
 
 ---
 
@@ -133,6 +135,7 @@ Every number traces to a committed results file in the linked repo.
 | **hn-etl-pipeline** | Dockerized Airflow producing Hive-partitioned NDJSON on S3-compatible storage (LocalStack), with a Glue/Athena query layer. 9 verified DAG runs, 12-case pytest suite | [Code](https://github.com/rosalinatorres888/hn-etl-pipeline) |
 | **Democracy clustering** | 167 countries on the EIU Democracy Index — K-means and hierarchical, silhouette model selection, bootstrap stability ARI 0.583 ± 0.091 | [Code](https://github.com/rosalinatorres888/democracy-clustering-analysis) · [Write-up](https://rosalinalabs.com/writing/democracy-in-data) |
 | **Human activity entropy** | Information-theoretic behavioral classification: permutation entropy and statistical complexity features over noisy multi-channel sensor data. 87.8% test accuracy — reported alongside 68.3% cross-validation and 27.5% cross-dataset generalization, because the third number is the one that matters | [Live dashboard](https://rosalinatorres888.github.io/har-3d-analytics-dashboard/) |
+| **rose-os-evidence-layer** | The governance layer from ROSE OS, public and runnable: four-rung evidence ladder, typed provenance edges where only `justified_by` licenses canonical, capability contracts that raise instead of warn, and an export gate that refuses rather than silently redacting. 18 tests, synthetic data only | [Code](https://github.com/rosalinatorres888/rose-os-evidence-layer) · [Demo](https://rosalinatorres888.github.io/rose-os-evidence-layer/) |
 | **Multi-model router** | Claude, ChatGPT, Gemini and Perplexity treated as stateless specialists behind a Neo4j graph trace ledger — memory lives in the system, not the models. 15 tests | [Code](https://github.com/rosalinatorres888/multi-model-router) |
 
 ### Honest-experiments series
