@@ -104,7 +104,26 @@ Multi-turn basketball questions in plain English resolved into executable Postgr
 **88.5% execution accuracy** on a conversation-level, leakage-free held-out split. I report the strict cross-schema number too — **31.8%** — because that gap is the finding, not a blemish. An earlier version of this project reported a much higher figure that turned out to be SQL *validity*, not execution accuracy; the correction is public in the repo.
 
 Thirteen defects root-caused along the way. My favorite: `nba_api` stored shot coordinates in tenths-of-feet and shot distance in whole feet, in the same table, undocumented. Every zone query silently returned zero rows.
+☘️ Few-Shot NL2SQL Pipeline — Rosalina Torres
 
+Schema-aware in-context reasoning. No training — the model reasons over the schema and few-shot examples at inference time. Multi-turn coreference is handled by carrying prior SQL forward in the prompt.
+
+```mermaid
+flowchart LR
+    A["NL utterance"] --> B["Schema injected\nstatically"]
+    B --> C["Few-shot examples\nretrieved by query class"]
+    C --> D["Prior-SQL carry-forward\ncoreference — turn 2+"]
+    D --> E["Claude Opus 4.8\nin-context reasoning"]
+    E --> F["Generated SQL"]
+    F --> G["Execute against\nPostgreSQL"]
+```
+
+**Key design choices:**
+- Static schema injection — full table/column context in every prompt
+- Few-shot examples selected by query class, not semantic similarity
+- Coreference resolved by appending prior SQL to the turn 2 prompt — no separate resolver module
+
+---
 [**My pipeline**](https://github.com/rosalinatorres888/nba-cosql-spatial-pipeline) · [**Group repo (3 architectures compared)**](https://github.com/rosalinatorres888/cosql-nba-spatial) · [**Live annotation tool**](https://nba-cosql-spatial-annotation-tool.netlify.app/)
 
 ---
