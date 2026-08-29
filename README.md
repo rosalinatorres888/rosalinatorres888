@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/M.S._Data_Analytics_Engineering-Northeastern_·_GPA_3.78-C8102E?style=flat-square" alt="MS DAE">
   <img src="https://img.shields.io/badge/Status-Degree_completed_Aug_2026-22c55e?style=flat-square" alt="Completed">
   <img src="https://img.shields.io/badge/Location-Greater_Boston_·_relocation_OK-1f2937?style=flat-square" alt="Location">
+  <a href="https://graphacademy.neo4j.com/c/8f3c76f9-4b9a-4d99-8365-bd9620169cb2/"><img src="https://img.shields.io/badge/Neo4j-Certified_Professional-4581C3?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j Certified Professional"></a>
   <img src="https://img.shields.io/badge/Languages-English_%2F_Spanish-6f42c1?style=flat-square" alt="Bilingual">
   <img src="https://img.shields.io/badge/Work_authorization-US-0369a1?style=flat-square" alt="Work auth">
 </p>
@@ -197,7 +198,9 @@ Coursework: Machine Learning & Data Analytics · Statistical Learning for Engine
 **B.S. Economics** — Bridgewater State University, Bridgewater, MA
 Study abroad: University of Limerick, Ireland — EU economics and monetary policy
 
-**Coursework certificates:** AWS Cloud Practitioner Essentials · AWS Fundamentals: Going Cloud-Native · AWS Fundamentals: Addressing Security Risk · Google Data Analytics: Foundations
+**Certification:** [Neo4j Certified Professional](https://graphacademy.neo4j.com/c/8f3c76f9-4b9a-4d99-8365-bd9620169cb2/) — Neo4j GraphAcademy, August 2026 · credential `8f3c76f9`
+
+**Coursework:** AWS Cloud Practitioner Essentials · AWS Fundamentals: Going Cloud-Native · AWS Fundamentals: Addressing Security Risk · Google Data Analytics: Foundations
 
 **Press:** Featured by Northeastern University Online, *"Career Change: Data Analytics Engineering."* Co-presenter, Northeastern Cutting EDGE Conference, May 2026.
 
